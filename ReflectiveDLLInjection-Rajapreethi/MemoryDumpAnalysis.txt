@@ -1,0 +1,1862 @@
+(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 netscan                        
+Volatility Foundation Volatility Framework 2.6.1
+Offset(P)          Proto    Local Address                  Foreign Address      State            Pid      Owner          Created
+0x7c64c680         UDPv4    0.0.0.0:3540                   *:*                                   2980     svchost.exe    2023-01-12 15:16:34 UTC+0000
+0x7c64c680         UDPv6    :::3540                        *:*                                   2980     svchost.exe    2023-01-12 15:16:34 UTC+0000
+0x7c67bec0         UDPv4    0.0.0.0:55968                  *:*                                   956      svchost.exe    2023-01-12 15:16:47 UTC+0000
+0x7c67bec0         UDPv6    :::55968                       *:*                                   956      svchost.exe    2023-01-12 15:16:47 UTC+0000
+0x7c874200         UDPv4    0.0.0.0:3702                   *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c874200         UDPv6    :::3702                        *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c8751c0         UDPv4    0.0.0.0:55966                  *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c8751c0         UDPv6    :::55966                       *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c884ec0         UDPv4    0.0.0.0:55965                  *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c8880a0         UDPv4    0.0.0.0:3702                   *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c8880a0         UDPv6    :::3702                        *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c94c0c0         UDPv4    0.0.0.0:5005                   *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c94d310         UDPv4    0.0.0.0:5004                   *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c94f5f0         UDPv4    0.0.0.0:5005                   *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c94f5f0         UDPv6    :::5005                        *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c94fec0         UDPv4    0.0.0.0:5004                   *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c94fec0         UDPv6    :::5004                        *:*                                   2580     wmpnetwk.exe   2023-01-12 15:16:22 UTC+0000
+0x7c97c300         UDPv4    0.0.0.0:0                      *:*                                   696      VBoxService.ex 2023-01-12 15:35:36 UTC+0000
+0x7c97f650         UDPv4    0.0.0.0:3702                   *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c980ec0         UDPv4    0.0.0.0:3702                   *:*                                   956      svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c9b1da0         UDPv4    0.0.0.0:0                      *:*                                   2980     svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c9b1da0         UDPv6    :::0                           *:*                                   2980     svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c9bb6c0         UDPv4    0.0.0.0:0                      *:*                                   2980     svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c9bb6c0         UDPv6    :::0                           *:*                                   2980     svchost.exe    2023-01-12 15:16:23 UTC+0000
+0x7c9c7830         UDPv4    0.0.0.0:0                      *:*                                   2980     svchost.exe    2023-01-12 15:16:34 UTC+0000
+0x7c9c7830         UDPv6    :::0                           *:*                                   2980     svchost.exe    2023-01-12 15:16:34 UTC+0000
+0x7caa3010         UDPv4    0.0.0.0:3702                   *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7caa3010         UDPv6    :::3702                        *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7caa70f0         UDPv4    0.0.0.0:3702                   *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7caa70f0         UDPv6    :::3702                        *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7cd26bb0         UDPv4    0.0.0.0:3702                   *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7cd29d00         UDPv4    0.0.0.0:3702                   *:*                                   1400     svchost.exe    2023-01-12 15:16:09 UTC+0000
+0x7cd2c010         UDPv4    0.0.0.0:50597                  *:*                                   1400     svchost.exe    2023-01-12 15:16:08 UTC+0000
+0x7cd2c750         UDPv4    0.0.0.0:50598                  *:*                                   1400     svchost.exe    2023-01-12 15:16:08 UTC+0000
+0x7cd2c750         UDPv6    :::50598                       *:*                                   1400     svchost.exe    2023-01-12 15:16:08 UTC+0000
+0x7ce95d00         UDPv4    0.0.0.0:5355                   *:*                                   1104     svchost.exe    2023-01-12 15:16:11 UTC+0000
+0x7ce95d00         UDPv6    :::5355                        *:*                                   1104     svchost.exe    2023-01-12 15:16:11 UTC+0000
+0x7cf6c980         UDPv4    192.168.178.146:138            *:*                                   4        System         2023-01-12 15:16:07 UTC+0000
+0x7cf797f0         UDPv4    192.168.178.146:137            *:*                                   4        System         2023-01-12 15:16:07 UTC+0000
+0x7cf929c0         UDPv4    0.0.0.0:0                      *:*                                   1104     svchost.exe    2023-01-12 15:16:07 UTC+0000
+0x7cf929c0         UDPv6    :::0                           *:*                                   1104     svchost.exe    2023-01-12 15:16:07 UTC+0000
+0x7c84ad90         TCPv4    0.0.0.0:49159                  0.0.0.0:0            LISTENING        516      lsass.exe      
+0x7c961360         TCPv4    0.0.0.0:554                    0.0.0.0:0            LISTENING        2580     wmpnetwk.exe   
+0x7c961c80         TCPv4    0.0.0.0:10243                  0.0.0.0:0            LISTENING        4        System         
+0x7c961c80         TCPv6    :::10243                       :::0                 LISTENING        4        System         
+0x7c965bd0         TCPv4    0.0.0.0:554                    0.0.0.0:0            LISTENING        2580     wmpnetwk.exe   
+0x7c965bd0         TCPv6    :::554                         :::0                 LISTENING        2580     wmpnetwk.exe   
+0x7c9930d0         TCPv4    0.0.0.0:2869                   0.0.0.0:0            LISTENING        4        System         
+0x7c9930d0         TCPv6    :::2869                        :::0                 LISTENING        4        System         
+0x7cae3ce0         TCPv4    0.0.0.0:3587                   0.0.0.0:0            LISTENING        2980     svchost.exe    
+0x7cae3ce0         TCPv6    :::3587                        :::0                 LISTENING        2980     svchost.exe    
+0x7cc8e500         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      services.exe   
+0x7ccbab40         TCPv4    0.0.0.0:49155                  0.0.0.0:0            LISTENING        500      services.exe   
+0x7ccbab40         TCPv6    :::49155                       :::0                 LISTENING        500      services.exe   
+0x7ccbb410         TCPv4    0.0.0.0:5357                   0.0.0.0:0            LISTENING        4        System         
+0x7ccbb410         TCPv6    :::5357                        :::0                 LISTENING        4        System         
+0x7cf789c0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        992      svchost.exe    
+0x7cf789c0         TCPv6    :::49154                       :::0                 LISTENING        992      svchost.exe    
+0x7cf78ee0         TCPv4    0.0.0.0:49154                  0.0.0.0:0            LISTENING        992      svchost.exe    
+0x7c84d820         TCPv6    ::1:445                        ::1:49192            CLOSED           -1                      
+0x7c9eacd0         TCPv4    192.168.178.146:49191          192.168.178.143:4444 ESTABLISHED      -1                      
+0x7d5f1160         UDPv4    0.0.0.0:55967                  *:*                                   956      svchost.exe    2023-01-12 15:16:47 UTC+0000
+0x7d7d4010         UDPv4    0.0.0.0:5355                   *:*                                   1104     svchost.exe    2023-01-12 15:16:11 UTC+0000
+0x7d1f3a80         TCPv4    0.0.0.0:445                    0.0.0.0:0            LISTENING        4        System         
+0x7d1f3a80         TCPv6    :::445                         :::0                 LISTENING        4        System         
+0x7d326b70         TCPv4    0.0.0.0:49159                  0.0.0.0:0            LISTENING        516      lsass.exe      
+0x7d326b70         TCPv6    :::49159                       :::0                 LISTENING        516      lsass.exe      
+0x7d4f0540         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        764      svchost.exe    
+0x7d4fa6d0         TCPv4    0.0.0.0:135                    0.0.0.0:0            LISTENING        764      svchost.exe    
+0x7d4fa6d0         TCPv6    :::135                         :::0                 LISTENING        764      svchost.exe    
+0x7d505010         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        408      wininit.exe    
+0x7d505400         TCPv4    0.0.0.0:49152                  0.0.0.0:0            LISTENING        408      wininit.exe    
+0x7d505400         TCPv6    :::49152                       :::0                 LISTENING        408      wininit.exe    
+0x7d550770         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        844      svchost.exe    
+0x7d550770         TCPv6    :::49153                       :::0                 LISTENING        844      svchost.exe    
+0x7d5508a0         TCPv4    0.0.0.0:49153                  0.0.0.0:0            LISTENING        844      svchost.exe    
+0x7d55bae0         TCPv4    192.168.178.146:139            0.0.0.0:0            LISTENING        4        System         
+0x7ef2a010         UDPv6    fe80::20b3:76c5:fae1:2019:55961 *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef31010         UDPv6    ::1:55962                      *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef31290         UDPv4    127.0.0.1:55964                *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef31950         UDPv4    192.168.178.146:55963          *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef366a0         UDPv6    fe80::20b3:76c5:fae1:2019:1900 *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef3e800         UDPv4    192.168.178.146:1900           *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef3eec0         UDPv6    ::1:1900                       *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7ef44010         UDPv4    127.0.0.1:1900                 *:*                                   1400     svchost.exe    2023-01-12 15:16:22 UTC+0000
+0x7fc19890         UDPv4    0.0.0.0:0                      *:*                                   696      VBoxService.ex 2023-01-12 15:36:12 UTC+0000
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 pslist                         
+Volatility Foundation Volatility Framework 2.6.1
+Offset(V)          Name                    PID   PPID   Thds     Hnds   Sess  Wow64 Start                          Exit                          
+------------------ -------------------- ------ ------ ------ -------- ------ ------ ------------------------------ ------------------------------
+0xfffffa80018cb040 System                    4      0     90      575 ------      0 2023-01-13 00:16:02 UTC+0000                                 
+0xfffffa8002a97690 smss.exe                268      4      2       29 ------      0 2023-01-13 00:16:02 UTC+0000                                 
+0xfffffa80029c8b00 csrss.exe               348    340      9      408      0      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80043ecb00 csrss.exe               400    392     10      285      1      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80043fa250 wininit.exe             408    340      3       75      0      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80044a18f0 winlogon.exe            464    392      3      110      1      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80044b63f0 services.exe            500    408      9      197      0      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80044d1060 lsass.exe               516    408      8      746      0      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa80044ceb00 lsm.exe                 524    408     10      144      0      0 2023-01-13 00:16:03 UTC+0000                                 
+0xfffffa800463ab00 svchost.exe             632    500     10      354      0      0 2023-01-13 00:16:05 UTC+0000                                 
+0xfffffa80044bab00 VBoxService.ex          696    500     13      127      0      0 2023-01-13 00:16:05 UTC+0000                                 
+0xfffffa80042dab00 svchost.exe             764    500      7      264      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa800430bb00 svchost.exe             844    500     22      570      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa800431fb00 svchost.exe             912    500     26      529      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa80047c7640 svchost.exe             956    500     19      468      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa80047d9b00 svchost.exe             992    500     33     1124      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa80047efb00 svchost.exe            1104    500     15      461      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa80048c0b00 spoolsv.exe            1220    500     14      288      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa80049d4060 svchost.exe            1260    500     17      310      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa8004a39690 svchost.exe            1364    500     10      147      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa8004a50b00 svchost.exe            1400    500     21      284      0      0 2023-01-12 15:16:07 UTC+0000                                 
+0xfffffa8004a55b00 IpOverUsbSvc.e         1516    500      8      199      0      1 2023-01-12 15:16:08 UTC+0000                                 
+0xfffffa8004ccb060 taskhost.exe           1096    500      9      196      1      0 2023-01-12 15:16:15 UTC+0000                                 
+0xfffffa8004cf2920 dwm.exe                1360    912      3      405      1      0 2023-01-12 15:16:15 UTC+0000                                 
+0xfffffa8004cfe470 explorer.exe           1440    332     30      965      1      0 2023-01-12 15:16:15 UTC+0000                                 
+0xfffffa8004d53b00 VBoxTray.exe           1980   1440     15      147      1      0 2023-01-12 15:16:16 UTC+0000                                 
+0xfffffa8004d53340 appsitory.exe          2016   1440      7      116      1      1 2023-01-12 15:16:16 UTC+0000                                 
+0xfffffa8004e3ab00 GoogleCrashHan         2292   2268      5       92      0      1 2023-01-12 15:16:16 UTC+0000                                 
+0xfffffa8004e3d630 GoogleCrashHan         2300   2268      5       83      0      0 2023-01-12 15:16:16 UTC+0000                                 
+0xfffffa8004dbdb00 SearchIndexer.         2448    500     13      654      0      0 2023-01-12 15:16:21 UTC+0000                                 
+0xfffffa8004e8f420 wmpnetwk.exe           2580    500     13      359      0      0 2023-01-12 15:16:22 UTC+0000                                 
+0xfffffa8004e29480 svchost.exe            2980    500      9      359      0      0 2023-01-12 15:16:23 UTC+0000                                 
+0xfffffa8001aaab00 sppsvc.exe              672    500      4      160      0      0 2023-01-12 15:18:09 UTC+0000                                 
+0xfffffa8001ed85f0 taskmgr.exe             276   1440      6      115      1      0 2023-01-12 15:19:47 UTC+0000                                 
+0xfffffa8001bf0060 procexp.exe            3056   1440      2      157      1      1 2023-01-12 15:20:03 UTC+0000                                 
+0xfffffa8001fa1b00 procexp64.exe          2372   3056      9      542      1      0 2023-01-12 15:20:03 UTC+0000                                 
+0xfffffa8002889b00 Procmon (1).ex         2484   1440      3      163      1      1 2023-01-12 15:20:15 UTC+0000                                 
+0xfffffa8001f89060 Procmon (1)64.         2184   2484      5      394      1      0 2023-01-12 15:20:16 UTC+0000                                 
+0xfffffa8001ed6060 notepad++.exe           872   1440      3       79      1      0 2023-01-12 15:20:24 UTC+0000                                 
+0xfffffa8001aef060 Calc.exe               2644   1440      3       93      1      0 2023-01-12 15:24:53 UTC+0000                                 
+0xfffffa8004eeb8f0 audiodg.exe            1344    844      4      121      0      0 2023-01-12 15:34:22 UTC+0000                                 
+0xfffffa8001e1bb00 FTK Imager.exe         2560   1440     13      351      1      0 2023-01-12 15:34:44 UTC+0000                                 
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 psxview                             
+Volatility Foundation Volatility Framework 2.6.1
+Offset(P)          Name                    PID pslist psscan thrdproc pspcid csrss session deskthrd ExitTime
+------------------ -------------------- ------ ------ ------ -------- ------ ----- ------- -------- --------
+0x000000007d50bb00 svchost.exe             844 True   False  False    True   True  True    True     
+0x000000007d1efb00 svchost.exe            1104 True   False  False    True   True  True    True     
+0x000000007f8d85f0 taskmgr.exe             276 True   False  False    True   True  True    True     
+0x000000007cb53340 appsitory.exe          2016 True   False  False    True   True  True    True     
+0x000000007caf2920 dwm.exe                1360 True   False  False    True   True  True    True     
+0x000000007cc39690 svchost.exe            1364 True   False  False    True   True  True    True     
+0x000000007d2ceb00 lsm.exe                 524 True   False  False    True   True  True    False    
+0x000000007f989060 Procmon (1)64.         2184 True   False  False    True   True  True    True     
+0x000000007fcaab00 sppsvc.exe              672 True   False  False    True   True  True    True     
+0x000000007d2bab00 VBoxService.ex          696 True   False  False    True   True  True    True     
+0x000000007c88f420 wmpnetwk.exe           2580 True   False  False    True   True  True    True     
+0x000000007c8eb8f0 audiodg.exe            1344 True   False  False    True   True  True    True     
+0x000000007cb53b00 VBoxTray.exe           1980 True   False  False    True   True  True    True     
+0x000000007fcef060 Calc.exe               2644 True   False  False    True   True  True    True     
+0x000000007c829480 svchost.exe            2980 True   False  False    True   True  True    False    
+0x000000007cc55b00 IpOverUsbSvc.e         1516 True   False  False    True   True  True    True     
+0x000000007fdf0060 procexp.exe            3056 True   False  False    True   True  True    True     
+0x000000007c83d630 GoogleCrashHan         2300 True   False  False    True   True  True    True     
+0x000000007d1d9b00 svchost.exe             992 True   False  False    True   True  True    True     
+0x000000007d1c7640 svchost.exe             956 True   False  False    True   True  True    True     
+0x000000007cfd4060 svchost.exe            1260 True   False  False    True   True  True    True     
+0x000000007f81bb00 FTK Imager.exe         2560 True   False  False    True   True  True    True     
+0x000000007f8d6060 notepad++.exe           872 True   False  False    True   True  True    True     
+0x000000007cacb060 taskhost.exe           1096 True   False  False    True   True  True    True     
+0x000000007c83ab00 GoogleCrashHan         2292 True   False  False    True   True  True    True     
+0x000000007d5fa250 wininit.exe             408 True   False  False    True   True  True    True     
+0x000000007d03ab00 svchost.exe             632 True   False  False    True   True  True    True     
+0x000000007d51fb00 svchost.exe             912 True   False  False    True   True  True    True     
+0x000000007cec0b00 spoolsv.exe            1220 True   False  False    True   True  True    True     
+0x000000007f9a1b00 procexp64.exe          2372 True   False  False    True   True  True    True     
+0x000000007cc50b00 svchost.exe            1400 True   False  False    True   True  True    True     
+0x000000007d2d1060 lsass.exe               516 True   False  False    True   True  True    False    
+0x000000007d4dab00 svchost.exe             764 True   False  False    True   True  True    True     
+0x000000007cafe470 explorer.exe           1440 True   False  False    True   True  True    True     
+0x000000007d2a18f0 winlogon.exe            464 True   False  False    True   True  True    True     
+0x000000007d2b63f0 services.exe            500 True   False  False    True   True  True    False    
+0x000000007cbbdb00 SearchIndexer.         2448 True   False  False    True   True  True    True     
+0x000000007ee89b00 Procmon (1).ex         2484 True   False  False    True   True  True    True     
+0x000000007d5ecb00 csrss.exe               400 True   False  False    True   False True    True     
+0x000000007ec97690 smss.exe                268 True   False  False    True   False False   False    
+0x000000007ffc5040 System                    4 True   False  False    True   False False   False    
+0x000000007efc8b00 csrss.exe               348 True   False  False    True   False True    True     
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 malfind --pid=872              
+Volatility Foundation Volatility Framework 2.6.1
+Process: notepad++.exe Pid: 872 Address: 0x1e20000
+Vad Tag: VadS Protection: PAGE_EXECUTE_READWRITE
+Flags: CommitCharge: 17, MemCommit: 1, PrivateMemory: 1, Protection: 6
+
+0x0000000001e20000  4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00   MZ..............
+0x0000000001e20010  b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00   ........@.......
+0x0000000001e20020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0x0000000001e20030  00 00 00 00 00 00 00 00 00 00 00 00 f8 00 00 00   ................
+
+0x0000000001e20000 4d               DEC EBP
+0x0000000001e20001 5a               POP EDX
+0x0000000001e20002 90               NOP
+0x0000000001e20003 0003             ADD [EBX], AL
+0x0000000001e20005 0000             ADD [EAX], AL
+0x0000000001e20007 000400           ADD [EAX+EAX], AL
+0x0000000001e2000a 0000             ADD [EAX], AL
+0x0000000001e2000c ff               DB 0xff
+0x0000000001e2000d ff00             INC DWORD [EAX]
+0x0000000001e2000f 00b800000000     ADD [EAX+0x0], BH
+0x0000000001e20015 0000             ADD [EAX], AL
+0x0000000001e20017 004000           ADD [EAX+0x0], AL
+0x0000000001e2001a 0000             ADD [EAX], AL
+0x0000000001e2001c 0000             ADD [EAX], AL
+0x0000000001e2001e 0000             ADD [EAX], AL
+0x0000000001e20020 0000             ADD [EAX], AL
+0x0000000001e20022 0000             ADD [EAX], AL
+0x0000000001e20024 0000             ADD [EAX], AL
+0x0000000001e20026 0000             ADD [EAX], AL
+0x0000000001e20028 0000             ADD [EAX], AL
+0x0000000001e2002a 0000             ADD [EAX], AL
+0x0000000001e2002c 0000             ADD [EAX], AL
+0x0000000001e2002e 0000             ADD [EAX], AL
+0x0000000001e20030 0000             ADD [EAX], AL
+0x0000000001e20032 0000             ADD [EAX], AL
+0x0000000001e20034 0000             ADD [EAX], AL
+0x0000000001e20036 0000             ADD [EAX], AL
+0x0000000001e20038 0000             ADD [EAX], AL
+0x0000000001e2003a 0000             ADD [EAX], AL
+0x0000000001e2003c f8               CLC
+0x0000000001e2003d 0000             ADD [EAX], AL
+0x0000000001e2003f 00               DB 0x0
+
+Process: notepad++.exe Pid: 872 Address: 0x2d10000
+Vad Tag: VadS Protection: PAGE_EXECUTE_READWRITE
+Flags: CommitCharge: 23, MemCommit: 1, PrivateMemory: 1, Protection: 6
+
+0x0000000002d10000  4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00   MZ..............
+0x0000000002d10010  b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00   ........@.......
+0x0000000002d10020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0x0000000002d10030  00 00 00 00 00 00 00 00 00 00 00 00 f8 00 00 00   ................
+
+0x0000000002d10000 4d               DEC EBP
+0x0000000002d10001 5a               POP EDX
+0x0000000002d10002 90               NOP
+0x0000000002d10003 0003             ADD [EBX], AL
+0x0000000002d10005 0000             ADD [EAX], AL
+0x0000000002d10007 000400           ADD [EAX+EAX], AL
+0x0000000002d1000a 0000             ADD [EAX], AL
+0x0000000002d1000c ff               DB 0xff
+0x0000000002d1000d ff00             INC DWORD [EAX]
+0x0000000002d1000f 00b800000000     ADD [EAX+0x0], BH
+0x0000000002d10015 0000             ADD [EAX], AL
+0x0000000002d10017 004000           ADD [EAX+0x0], AL
+0x0000000002d1001a 0000             ADD [EAX], AL
+0x0000000002d1001c 0000             ADD [EAX], AL
+0x0000000002d1001e 0000             ADD [EAX], AL
+0x0000000002d10020 0000             ADD [EAX], AL
+0x0000000002d10022 0000             ADD [EAX], AL
+0x0000000002d10024 0000             ADD [EAX], AL
+0x0000000002d10026 0000             ADD [EAX], AL
+0x0000000002d10028 0000             ADD [EAX], AL
+0x0000000002d1002a 0000             ADD [EAX], AL
+0x0000000002d1002c 0000             ADD [EAX], AL
+0x0000000002d1002e 0000             ADD [EAX], AL
+0x0000000002d10030 0000             ADD [EAX], AL
+0x0000000002d10032 0000             ADD [EAX], AL
+0x0000000002d10034 0000             ADD [EAX], AL
+0x0000000002d10036 0000             ADD [EAX], AL
+0x0000000002d10038 0000             ADD [EAX], AL
+0x0000000002d1003a 0000             ADD [EAX], AL
+0x0000000002d1003c f8               CLC
+0x0000000002d1003d 0000             ADD [EAX], AL
+0x0000000002d1003f 00               DB 0x0
+
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 vadinfo --pid=872 -a  0x1e20000
+Volatility Foundation Volatility Framework 2.6.1
+************************************************************************
+Pid:    872
+VAD node @ 0xfffffa80027f8df0 Start 0x0000000001e20000 End 0x0000000001e30fff Tag VadS
+Flags: CommitCharge: 17, MemCommit: 1, PrivateMemory: 1, Protection: 6
+Protection: PAGE_EXECUTE_READWRITE
+Vad Type: VadNone
+
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 vadinfo --pid=872 -a  0x2d10000
+Volatility Foundation Volatility Framework 2.6.1
+************************************************************************
+Pid:    872
+VAD node @ 0xfffffa8004154520 Start 0x0000000002d10000 End 0x0000000002d26fff Tag VadS
+Flags: CommitCharge: 23, MemCommit: 1, PrivateMemory: 1, Protection: 6
+Protection: PAGE_EXECUTE_READWRITE
+Vad Type: VadNone
+
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 impscan --pid=872 -b 0x7711c6ce     
+Volatility Foundation Volatility Framework 2.6.1
+IAT                Call               Module               Function
+------------------ ------------------ -------------------- --------
+0x000000007716c000 0x000000007735bb90 ntdll.dll            RtlCompareMemory
+0x000000007716c008 0x00000000773c6fb0 ntdll.dll            RtlAddFunctionTable
+0x000000007716c010 0x0000000077327150 ntdll.dll            RtlLookupFunctionEntry
+0x000000007716c018 0x00000000772ff0c0 ntdll.dll            RtlPcToFileHeader
+0x000000007716c020 0x000000007735b710 ntdll.dll            RtlRestoreContext
+0x000000007716c028 0x00000000773b8ed0 kernel32.dll         RtlUnwind
+0x000000007716c030 0x000000007733a7b0 ntdll.dll            RtlInstallFunctionTableCallback
+0x000000007716c038 0x00000000773b58f0 ntdll.dll            RtlDeleteFunctionTable
+0x000000007716c040 0x000000007735b5e0 ntdll.dll            RtlCaptureContext
+0x000000007716c048 0x00000000773339e0 ntdll.dll            RtlRaiseException
+0x000000007716c050 0x000000007732cc30 ntdll.dll            RtlVirtualUnwind
+0x000000007716c058 0x000000007732c4e0 ntdll.dll            RtlUnwindEx
+0x000000007716c060 0x000000007733c3e0 ntdll.dll            RtlCaptureStackBackTrace
+0x000000007716c070 0x00000000773219e0 ntdll.dll            RtlQueryEnvironmentVariable
+0x000000007716c078 0x0000000077359b40 ntdll.dll            ZwWriteVirtualMemory
+0x000000007716c080 0x00000000773338f0 ntdll.dll            TpAllocTimer
+0x000000007716c088 0x0000000077336fd0 ntdll.dll            TpAllocIoCompletion
+0x000000007716c090 0x00000000772fe340 ntdll.dll            TpAllocWork
+0x000000007716c098 0x00000000772fb930 ntdll.dll            TpSetPoolMinThreads
+0x000000007716c0a0 0x0000000077336e00 ntdll.dll            TpSimpleTryPost
+0x000000007716c0a8 0x0000000077300600 ntdll.dll            TpCallbackMayRunLong
+0x000000007716c0b0 0x00000000773db210 ntdll.dll            TpAllocPool
+0x000000007716c0b8 0x00000000773331f0 ntdll.dll            TpAllocWait
+0x000000007716c0c0 0x00000000772fb840 ntdll.dll            TpSetPoolStackInformation
+0x000000007716c0c8 0x0000000077397a90 ntdll.dll            TpQueryPoolStackInformation
+0x000000007716c0d0 0x000000007733d3b0 ntdll.dll            TpAllocCleanupGroup
+0x000000007716c0d8 0x0000000077359b60 ntdll.dll            ZwDuplicateObject
+0x000000007716c0e0 0x0000000077359c20 ntdll.dll            ZwCreateEvent
+0x000000007716c0e8 0x000000007730f4c0 ntdll.dll            RtlConvertSidToUnicodeString
+0x000000007716c0f0 0x000000007735a680 ntdll.dll            ZwNotifyChangeKey
+0x000000007716c0f8 0x0000000077340430 ntdll.dll            RtlRunOnceInitialize
+0x000000007716c100 0x000000007735abe0 ntdll.dll            ZwResetEvent
+0x000000007716c108 0x00000000772fe7b0 ntdll.dll            RtlValidSecurityDescriptor
+0x000000007716c110 0x000000007730cb30 ntdll.dll            RtlOpenCurrentUser
+0x000000007716c118 0x0000000077348000 ntdll.dll            _strlwr
+0x000000007716c120 0x000000007734b5c0 ntdll.dll            strncat
+0x000000007716c128 0x000000007735a990 ntdll.dll            ZwQueryInstallUILanguage
+0x000000007716c130 0x00000000773e3420 ntdll.dll            RtlpConvertCultureNamesToLCIDs
+0x000000007716c138 0x0000000077343cb0 ntdll.dll            RtlUnicodeStringToInteger
+0x000000007716c140 0x00000000773e74d0 ntdll.dll            RtlpConvertLCIDsToCultureNames
+0x000000007716c148 0x00000000773f0320 ntdll.dll            RtlSetProcessPreferredUILanguages
+0x000000007716c150 0x000000007733ada0 ntdll.dll            EtwEventEnabled
+0x000000007716c158 0x0000000077315190 ntdll.dll            RtlLCIDToCultureName
+0x000000007716c160 0x0000000077330ae0 ntdll.dll            RtlExpandEnvironmentStrings_U
+0x000000007716c168 0x00000000773d77d0 ntdll.dll            RtlIdnToAscii
+0x000000007716c170 0x00000000773d7920 ntdll.dll            RtlIdnToUnicode
+0x000000007716c178 0x00000000773d77a0 ntdll.dll            RtlIdnToNameprepUnicode
+0x000000007716c180 0x00000000773d6d60 ntdll.dll            RtlNormalizeString
+0x000000007716c188 0x00000000773d6ce0 ntdll.dll            RtlIsNormalizedString
+0x000000007716c190 0x000000007734794c ntdll.dll            _ui64tow
+0x000000007716c198 0x000000007732bd10 ntdll.dll            RtlIntegerToUnicodeString
+0x000000007716c1a0 0x00000000773488ac ntdll.dll            _wtol
+0x000000007716c1a8 0x0000000077348418 ntdll.dll            _wcslwr
+0x000000007716c1b0 0x00000000773aef90 ntdll.dll            RtlUnhandledExceptionFilter
+0x000000007716c1b8 0x0000000077359a60 ntdll.dll            ZwTerminateProcess
+0x000000007716c1c0 0x000000007734c710 ntdll.dll            wcsncmp
+0x000000007716c1c8 0x000000007734c748 ntdll.dll            wcsncpy
+0x000000007716c1d0 0x0000000077397050 ntdll.dll            RtlReadThreadProfilingData
+0x000000007716c1d8 0x0000000077397190 ntdll.dll            RtlQueryThreadProfiling
+0x000000007716c1e0 0x00000000773b6110 ntdll.dll            RtlDisableThreadProfiling
+0x000000007716c1e8 0x00000000773ca3b0 ntdll.dll            RtlEnableThreadProfiling
+0x000000007716c1f0 0x000000007739bd60 ntdll.dll            RtlSetExtendedFeaturesMask
+0x000000007716c1f8 0x00000000773903b0 ntdll.dll            RtlGetExtendedFeaturesMask
+0x000000007716c200 0x000000007739bd90 ntdll.dll            RtlLocateExtendedFeature
+0x000000007716c208 0x00000000773a3b70 ntdll.dll            RtlCopyContext
+0x000000007716c210 0x0000000077390370 ntdll.dll            RtlLocateLegacyContext
+0x000000007716c218 0x0000000077390470 ntdll.dll            RtlInitializeExtendedContext
+0x000000007716c220 0x00000000773903d0 ntdll.dll            RtlGetExtendedContextLength
+0x000000007716c228 0x000000007738f4d0 ntdll.dll            RtlGetEnabledExtendedFeatures
+0x000000007716c230 0x000000007735aac0 ntdll.dll            ZwRaiseException
+0x000000007716c238 0x00000000773a6ae0 ntdll.dll            EtwEventWriteNoRegistration
+0x000000007716c240 0x00000000773dccf0 ntdll.dll            RtlSetIoCompletionCallback
+0x000000007716c248 0x00000000772fd480 ntdll.dll            RtlQueueWorkItem
+0x000000007716c250 0x00000000772fcc70 ntdll.dll            RtlDeregisterWait
+0x000000007716c258 0x00000000772ff660 ntdll.dll            RtlRegisterWait
+0x000000007716c260 0x0000000077359ba0 ntdll.dll            ZwOpenEvent
+0x000000007716c268 0x000000007735abf0 ntdll.dll            ZwResetWriteWatch
+0x000000007716c270 0x000000007735a500 ntdll.dll            ZwGetWriteWatch
+0x000000007716c278 0x00000000773597d0 ntdll.dll            ZwMapUserPhysicalPagesScatter
+0x000000007716c280 0x000000007735a640 ntdll.dll            ZwMapUserPhysicalPages
+0x000000007716c288 0x000000007735a440 ntdll.dll            ZwFreeUserPhysicalPages
+0x000000007716c290 0x0000000077359ea0 ntdll.dll            ZwAllocateUserPhysicalPages
+0x000000007716c298 0x000000007735b060 ntdll.dll            ZwUnlockVirtualMemory
+0x000000007716c2a0 0x000000007735a600 ntdll.dll            ZwLockVirtualMemory
+0x000000007716c2a8 0x000000007733bed0 ntdll.dll            RtlSetEnvironmentStrings
+0x000000007716c2b0 0x000000007733a4d0 ntdll.dll            RtlOemStringToUnicodeString
+0x000000007716c2b8 0x0000000077343de0 ntdll.dll            CsrCaptureMessageBuffer
+0x000000007716c2c0 0x0000000077348b88 ntdll.dll            bsearch
+0x000000007716c2c8 0x00000000773c8a20 ntdll.dll            RtlComputeImportTableHash
+0x000000007716c2d0 0x0000000077342ff0 ntdll.dll            RtlEncodeSystemPointer
+0x000000007716c2d8 0x0000000077325f20 ntdll.dll            RtlFindCharInUnicodeString
+0x000000007716c2e0 0x00000000772fe640 ntdll.dll            RtlNtPathNameToDosPathName
+0x000000007716c2e8 0x000000007738e0f0 ntdll.dll            RtlRandom
+0x000000007716c2f0 0x0000000077359c60 ntdll.dll            ZwApphelpCacheControl
+0x000000007716c2f8 0x0000000077307f10 ntdll.dll            CsrCaptureMessageMultiUnicodeStringsInPlace
+0x000000007716c300 0x0000000077324870 ntdll.dll            RtlFindActivationContextSectionGuid
+0x000000007716c308 0x0000000077320bb0 ntdll.dll            RtlFindActivationContextSectionString
+0x000000007716c310 0x00000000773aafc0 ntdll.dll            RtlQueryActivationContextApplicationSettings
+0x000000007716c318 0x000000007732e8a0 ntdll.dll            RtlQueryInformationActivationContext
+0x000000007716c320 0x000000007730d180 ntdll.dll            RtlSetThreadPreferredUILanguages
+0x000000007716c328 0x00000000773350b0 ntdll.dll            RtlMultiAppendUnicodeStringBuffer
+0x000000007716c330 0x000000007731d890 ntdll.dll            RtlImageNtHeaderEx
+0x000000007716c338 0x00000000773187e0 ntdll.dll            RtlGetThreadPreferredUILanguages
+0x000000007716c340 0x0000000077327460 ntdll.dll            RtlGetActiveActivationContext
+0x000000007716c348 0x00000000772fb310 ntdll.dll            RtlDeactivateActivationContext
+0x000000007716c350 0x00000000772fb530 ntdll.dll            RtlActivateActivationContext
+0x000000007716c358 0x00000000773955d0 ntdll.dll            RtlZombifyActivationContext
+0x000000007716c360 0x00000000772ff410 ntdll.dll            RtlReleaseActivationContext
+0x000000007716c368 0x0000000077331c50 ntdll.dll            RtlAddRefActivationContext
+0x000000007716c370 0x000000007733cc50 ntdll.dll            RtlCreateActivationContext
+0x000000007716c378 0x00000000773012f0 ntdll.dll            RtlGetLengthWithoutLastFullDosOrNtPathElement
+0x000000007716c380 0x0000000077301240 ntdll.dll            RtlpApplyLengthFunction
+0x000000007716c388 0x00000000773350a0 ntdll.dll            RtlDoesFileExists_U
+0x000000007716c390 0x00000000773971c0 ntdll.dll            RtlpEnsureBufferSize
+0x000000007716c398 0x00000000772fbde0 ntdll.dll            DbgPrintEx
+0x000000007716c3a0 0x000000007735a130 ntdll.dll            ZwCreateJobSet
+0x000000007716c3a8 0x000000007735ad80 ntdll.dll            ZwSetInformationJobObject
+0x000000007716c3b0 0x000000007735a930 ntdll.dll            ZwQueryInformationJobObject
+0x000000007716c3b8 0x000000007735afa0 ntdll.dll            ZwTerminateJobObject
+0x000000007716c3c0 0x000000007735a020 ntdll.dll            ZwAssignProcessToJobObject
+0x000000007716c3c8 0x000000007735a6e0 ntdll.dll            ZwOpenJobObject
+0x000000007716c3d0 0x000000007735a120 ntdll.dll            ZwCreateJobObject
+0x000000007716c3d8 0x000000007734c444 ntdll.dll            tolower
+0x000000007716c3e0 0x000000007734758c ntdll.dll            atol
+0x000000007716c3e8 0x00000000773473b0 ntdll.dll            isdigit
+0x000000007716c3f0 0x00000000773d1180 ntdll.dll            RtlEnterUmsSchedulingMode
+0x000000007716c3f8 0x00000000773c8cc0 ntdll.dll            RtlCreateUmsThreadContext
+0x000000007716c400 0x00000000773b5bc0 ntdll.dll            RtlDeleteUmsThreadContext
+0x000000007716c408 0x0000000077395680 ntdll.dll            RtlSetUmsThreadInformation
+0x000000007716c410 0x00000000773956c0 ntdll.dll            RtlQueryUmsThreadInformation
+0x000000007716c418 0x0000000077395770 ntdll.dll            RtlGetNextUmsListItem
+0x000000007716c420 0x0000000077344e70 ntdll.dll            RtlGetCurrentUmsThread
+0x000000007716c428 0x00000000773b5c30 ntdll.dll            RtlDeleteUmsCompletionList
+0x000000007716c430 0x000000007739f530 ntdll.dll            RtlUmsThreadYield
+0x000000007716c438 0x00000000773a5570 ntdll.dll            RtlExecuteUmsThread
+0x000000007716c440 0x00000000773957a0 ntdll.dll            RtlGetUmsCompletionListEvent
+0x000000007716c448 0x0000000077395800 ntdll.dll            RtlDequeueUmsCompletionListItems
+0x000000007716c450 0x00000000773c8e80 ntdll.dll            RtlCreateUmsCompletionList
+0x000000007716c458 0x000000007734c478 ntdll.dll            toupper
+0x000000007716c460 0x0000000077339c80 ntdll.dll            RtlDestroyEnvironment
+0x000000007716c468 0x0000000077335c00 ntdll.dll            RtlCreateEnvironmentEx
+0x000000007716c470 0x0000000077339a00 ntdll.dll            RtlCreateEnvironment
+0x000000007716c478 0x0000000077359d00 ntdll.dll            ZwQueryEvent
+0x000000007716c480 0x00000000773ddb20 ntdll.dll            RtlFreeOemString
+0x000000007716c488 0x00000000773435c0 ntdll.dll            RtlCopyLuid
+0x000000007716c490 0x0000000077307450 ntdll.dll            RtlGetCurrentDirectory_U
+0x000000007716c498 0x0000000077344330 ntdll.dll            CsrAllocateMessagePointer
+0x000000007716c4a0 0x0000000077359810 ntdll.dll            ZwDeviceIoControlFile
+0x000000007716c4a8 0x00000000773dbc20 ntdll.dll            RtlQueryProcessDebugInformation
+0x000000007716c4b0 0x00000000773960a0 ntdll.dll            RtlCreateQueryDebugBuffer
+0x000000007716c4b8 0x0000000077359a20 ntdll.dll            ZwMapViewOfSection
+0x000000007716c4c0 0x00000000773a6200 ntdll.dll            RtlDestroyQueryDebugBuffer
+0x000000007716c4c8 0x0000000077359a40 ntdll.dll            ZwUnmapViewOfSection
+0x000000007716c4d0 0x000000007732bda0 ntdll.dll            RtlProcessFlsData
+0x000000007716c4d8 0x0000000077342b90 ntdll.dll            RtlFreeUserStack
+0x000000007716c4e0 0x0000000077334b40 ntdll.dll            RtlCreateUserStack
+0x000000007716c4e8 0x00000000773325e0 ntdll.dll            RtlFreeActivationContextStack
+0x000000007716c4f0 0x00000000773321d0 ntdll.dll            RtlAllocateActivationContextStack
+0x000000007716c4f8 0x00000000773424e0 ntdll.dll            TpCaptureCaller
+0x000000007716c500 0x00000000773599f0 ntdll.dll            ZwQueryInformationThread
+0x000000007716c508 0x0000000077395e60 ntdll.dll            RtlWow64SuspendThread
+0x000000007716c510 0x0000000077395e70 ntdll.dll            RtlWow64SetThreadContext
+0x000000007716c518 0x0000000077395e90 ntdll.dll            RtlWow64GetThreadContext
+0x000000007716c520 0x000000007735acd0 ntdll.dll            ZwSetContextThread
+0x000000007716c528 0x000000007735a470 ntdll.dll            ZwGetContextThread
+0x000000007716c530 0x00000000773088b0 ntdll.dll            RtlFreeSid
+0x000000007716c538 0x0000000077308e20 ntdll.dll            RtlAllocateAndInitializeSid
+0x000000007716c540 0x0000000077341430 ntdll.dll            RtlRunOnceComplete
+0x000000007716c548 0x00000000773414f0 ntdll.dll            RtlRunOnceBeginInitialize
+0x000000007716c550 0x0000000077341610 ntdll.dll            RtlRunOnceExecuteOnce
+0x000000007716c558 0x00000000773b1220 ntdll.dll            RtlSleepConditionVariableSRW
+0x000000007716c560 0x00000000773aff30 ntdll.dll            RtlSleepConditionVariableCS
+0x000000007716c568 0x000000007735af30 ntdll.dll            ZwSignalAndWaitForSingleObject
+0x000000007716c570 0x00000000773c6c80 ntdll.dll            RtlAddIntegrityLabelToBoundaryDescriptor
+0x000000007716c578 0x00000000773c6dc0 ntdll.dll            RtlAddSIDToBoundaryDescriptor
+0x000000007716c580 0x00000000773c6f00 ntdll.dll            RtlCreateBoundaryDescriptor
+0x000000007716c588 0x000000007735a750 ntdll.dll            ZwOpenPrivateNamespace
+0x000000007716c590 0x000000007735a320 ntdll.dll            ZwDeletePrivateNamespace
+0x000000007716c598 0x000000007735a1b0 ntdll.dll            ZwCreatePrivateNamespace
+0x000000007716c5a0 0x0000000077340430 ntdll.dll            RtlRunOnceInitialize
+0x000000007716c5a8 0x0000000077359ca0 ntdll.dll            ZwProtectVirtualMemory
+0x000000007716c5b0 0x0000000077351ef4 ntdll.dll            strcpy_s
+0x000000007716c5b8 0x000000007735abb0 ntdll.dll            ZwReplacePartitionUnit
+0x000000007716c5c0 0x00000000773224b0 ntdll.dll            RtlCompareUnicodeString
+0x000000007716c5c8 0x000000007735aa90 ntdll.dll            ZwQuerySystemInformationEx
+0x000000007716c5d0 0x00000000773b85a0 ntdll.dll            RtlRaiseStatus
+0x000000007716c5d8 0x0000000077343760 ntdll.dll            RtlDecodeSystemPointer
+0x000000007716c5e0 0x00000000773dadf0 ntdll.dll            RtlWow64LogMessageInEventLogger
+0x000000007716c5e8 0x0000000077306e50 ntdll.dll            LdrUnloadDll
+0x000000007716c5f0 0x000000007731f820 ntdll.dll            LdrGetProcedureAddress
+0x000000007716c5f8 0x00000000773dac90 ntdll.dll            LdrLoadDll
+0x000000007716c600 0x0000000077343330 ntdll.dll            RtlSubAuthoritySid
+0x000000007716c608 0x0000000077343450 ntdll.dll            RtlInitializeSid
+0x000000007716c610 0x00000000773599b0 ntdll.dll            ZwQueryInformationToken
+0x000000007716c618 0x00000000773dffd0 ntdll.dll            RtlQueryRegistryValues
+0x000000007716c620 0x000000007739d150 ntdll.dll            RtlxOemStringToUnicodeSize
+0x000000007716c628 0x000000007735a560 ntdll.dll            ZwIsSystemResumeAutomatic
+0x000000007716c630 0x000000007735a490 ntdll.dll            ZwGetDevicePowerState
+0x000000007716c638 0x000000007735aec0 ntdll.dll            ZwSetThreadExecutionState
+0x000000007716c640 0x000000007735a550 ntdll.dll            ZwInitiatePowerAction
+0x000000007716c648 0x0000000077359d90 ntdll.dll            ZwPowerInformation
+0x000000007716c650 0x00000000773a3960 ntdll.dll            RtlIsNameLegalDOS8Dot3
+0x000000007716c658 0x000000007735af00 ntdll.dll            ZwSetVolumeInformationFile
+0x000000007716c660 0x000000007730cab0 ntdll.dll            RtlGetFullPathName_U
+0x000000007716c668 0x000000007732c270 ntdll.dll            RtlQueryEnvironmentVariable_U
+0x000000007716c670 0x00000000773592a0 ntdll.dll            RtlGetCurrentProcessorNumberEx
+0x000000007716c678 0x0000000077359870 ntdll.dll            ZwSetInformationThread
+0x000000007716c680 0x00000000773599e0 ntdll.dll            ZwOpenThreadToken
+0x000000007716c688 0x0000000077310440 ntdll.dll            RtlUpcaseUnicodeChar
+0x000000007716c690 0x000000007734cb60 ntdll.dll            wcstoul
+0x000000007716c698 0x000000007732f390 ntdll.dll            LdrRscIsTypeExist
+0x000000007716c6a0 0x000000007732ada0 ntdll.dll            LdrpResGetMappingSize
+0x000000007716c6a8 0x0000000077334950 ntdll.dll            LdrLoadAlternateResourceModule
+0x000000007716c6b0 0x000000007730acd0 ntdll.dll            LdrLoadAlternateResourceModuleEx
+0x000000007716c6b8 0x000000007730fd60 ntdll.dll            RtlCultureNameToLCID
+0x000000007716c6c0 0x00000000773599d0 ntdll.dll            ZwQueryVirtualMemory
+0x000000007716c6c8 0x000000007734c800 ntdll.dll            wcsrchr
+0x000000007716c6d0 0x00000000773d74b0 ntdll.dll            LdrGetFileNameFromLoadAsDataTable
+0x000000007716c6d8 0x00000000773f2260 ntdll.dll            LdrResFindResource
+0x000000007716c6e0 0x0000000077330cd0 ntdll.dll            LdrFindResourceEx_U
+0x000000007716c6e8 0x000000007732bc10 ntdll.dll            LdrResFindResourceDirectory
+0x000000007716c6f0 0x00000000773229f0 ntdll.dll            RtlImageDirectoryEntryToData
+0x000000007716c6f8 0x0000000077328910 ntdll.dll            LdrpResGetResourceDirectory
+0x000000007716c700 0x000000007732f730 ntdll.dll            LdrResGetRCConfig
+0x000000007716c708 0x000000007732fe60 ntdll.dll            LdrFindResource_U
+0x000000007716c710 0x000000007733f9d0 ntdll.dll            RtlVerifyVersionInfo
+0x000000007716c718 0x00000000773435d0 ntdll.dll            RtlGetProductInfo
+0x000000007716c720 0x0000000077351f7c ntdll.dll            strncat_s
+0x000000007716c728 0x0000000077347ff4 ntdll.dll            _stricmp
+0x000000007716c730 0x000000007732b330 ntdll.dll            RtlReleaseSRWLockShared
+0x000000007716c738 0x000000007732b280 ntdll.dll            RtlAcquireSRWLockShared
+0x000000007716c740 0x0000000077344610 ntdll.dll            RtlInitAnsiStringEx
+0x000000007716c748 0x000000007734b370 ntdll.dll            strchr
+0x000000007716c750 0x0000000077331f10 ntdll.dll            RtlCreateUnicodeString
+0x000000007716c758 0x00000000773efe40 ntdll.dll            RtlGetUILanguageInfo
+0x000000007716c760 0x00000000773137a0 ntdll.dll            RtlLcidToLocaleName
+0x000000007716c768 0x000000007735a160 ntdll.dll            ZwCreateMailslotFile
+0x000000007716c770 0x0000000077347ff4 ntdll.dll            _stricmp
+0x000000007716c778 0x00000000773341e0 ntdll.dll            RtlCleanUpTEBLangLists
+0x000000007716c780 0x000000007733f710 ntdll.dll            LdrQueryImageFileExecutionOptions
+0x000000007716c788 0x000000007730b8e0 ntdll.dll            RtlReleaseSRWLockExclusive
+0x000000007716c790 0x000000007730b920 ntdll.dll            RtlAcquireSRWLockExclusive
+0x000000007716c798 0x0000000077359b00 ntdll.dll            ZwQuerySystemInformation
+0x000000007716c7a0 0x00000000773412a0 ntdll.dll            RtlEncodePointer
+0x000000007716c7a8 0x0000000077341280 ntdll.dll            RtlSetUnhandledExceptionFilter
+0x000000007716c7b0 0x0000000077343260 ntdll.dll            LdrSetDllManifestProber
+0x000000007716c7b8 0x0000000077343280 ntdll.dll            RtlSetThreadPoolStartFunc
+0x000000007716c7c0 0x000000007732c4a0 ntdll.dll            RtlImageNtHeader
+0x000000007716c7c8 0x00000000773b6a20 ntdll.dll            RtlDeregisterSecureMemoryCacheCallback
+0x000000007716c7d0 0x00000000773cd300 ntdll.dll            RtlRegisterSecureMemoryCacheCallback
+0x000000007716c7d8 0x00000000773dd620 ntdll.dll            RtlCompactHeap
+0x000000007716c7e0 0x0000000077359b00 ntdll.dll            ZwQuerySystemInformation
+0x000000007716c7e8 0x0000000077331140 ntdll.dll            RtlUnlockHeap
+0x000000007716c7f0 0x0000000077343580 ntdll.dll            RtlFreeHandle
+0x000000007716c7f8 0x000000007732d4c0 kernel32.dll         HeapSize
+0x000000007716c800 0x0000000077343ab0 ntdll.dll            RtlAllocateHandle
+0x000000007716c808 0x00000000773dd2a0 ntdll.dll            RtlGetUserInfoHeap
+0x000000007716c810 0x00000000773100b0 kernel32.dll         HeapReAlloc
+0x000000007716c818 0x00000000773404e0 ntdll.dll            RtlSetUserValueHeap
+0x000000007716c820 0x00000000773434b0 ntdll.dll            RtlIsValidHandle
+0x000000007716c828 0x000000007732bca0 ntdll.dll            RtlLockHeap
+0x000000007716c830 0x000000007735ae80 ntdll.dll            ZwSetSystemEnvironmentValueEx
+0x000000007716c838 0x000000007735aa80 ntdll.dll            ZwQuerySystemEnvironmentValueEx
+0x000000007716c840 0x000000007733eb50 ntdll.dll            RtlGUIDFromString
+0x000000007716c848 0x000000007733b490 ntdll.dll            RtlInitString
+0x000000007716c850 0x00000000773522e0 ntdll.dll            swprintf_s
+0x000000007716c858 0x000000007739a750 ntdll.dll            RtlGetLastNtStatus
+0x000000007716c860 0x0000000077342e10 ntdll.dll            RtlGetAce
+0x000000007716c868 0x0000000077338c60 ntdll.dll            RtlQueryInformationAcl
+0x000000007716c870 0x0000000077307510 ntdll.dll            RtlEqualSid
+0x000000007716c878 0x000000007735aad0 ntdll.dll            ZwRaiseHardError
+0x000000007716c880 0x0000000077359c50 ntdll.dll            ZwFlushBuffersFile
+0x000000007716c888 0x0000000077359c30 ntdll.dll            ZwQueryVolumeInformationFile
+0x000000007716c890 0x000000007730e3e0 ntdll.dll            RtlDosPathNameToNtPathName_U_WithStatus
+0x000000007716c898 0x00000000772fc510 ntdll.dll            LdrAddRefDll
+0x000000007716c8a0 0x000000007735a140 ntdll.dll            ZwCreateKeyTransacted
+0x000000007716c8a8 0x00000000773483b0 ntdll.dll            _vsnwprintf
+0x000000007716c8b0 0x0000000077333880 ntdll.dll            RtlDetermineDosPathNameType_U
+0x000000007716c8b8 0x000000007739d490 ntdll.dll            RtlUnicodeStringToOemString
+0x000000007716c8c0 0x0000000077395e50 ntdll.dll            RtlWow64EnableFsRedirectionEx
+0x000000007716c8c8 0x0000000077359d70 ntdll.dll            ZwCancelIoFile
+0x000000007716c8d0 0x000000007735a040 ntdll.dll            ZwCancelSynchronousIoFile
+0x000000007716c8d8 0x000000007735a670 ntdll.dll            ZwNotifyChangeDirectoryFile
+0x000000007716c8e0 0x00000000773278f0 ntdll.dll            RtlDeactivateActivationContextUnsafeFast
+0x000000007716c8e8 0x00000000773274e0 ntdll.dll            RtlActivateActivationContextUnsafeFast
+0x000000007716c8f0 0x00000000773597e0 ntdll.dll            ZwWaitForSingleObject
+0x000000007716c8f8 0x0000000077359af0 ntdll.dll            ZwQueryDirectoryFile
+0x000000007716c900 0x00000000773a1a10 ntdll.dll            RtlGetThreadErrorMode
+0x000000007716c908 0x00000000773428a0 ntdll.dll            RtlSetThreadErrorMode
+0x000000007716c910 0x00000000773bd7a0 ntdll.dll            RtlSetLastWin32ErrorAndNtStatusFromNtStatus
+0x000000007716c918 0x0000000077330a90 ntdll.dll            EtwUnregisterTraceGuids
+0x000000007716c920 0x000000007733b0f0 ntdll.dll            EtwEventWrite
+0x000000007716c928 0x0000000077306da0 ntdll.dll            EtwEventRegister
+0x000000007716c930 0x0000000077359cb0 ntdll.dll            ZwQuerySection
+0x000000007716c938 0x0000000077359c40 ntdll.dll            ZwCreateSection
+0x000000007716c940 0x000000007733f8a0 ntdll.dll            RtlGetVersion
+0x000000007716c948 0x00000000773437a0 ntdll.dll            RtlQueryElevationFlags
+0x000000007716c950 0x0000000077359960 ntdll.dll            ZwSetInformationProcess
+0x000000007716c958 0x000000007735a760 ntdll.dll            ZwOpenProcessToken
+0x000000007716c960 0x0000000077305be0 ntdll.dll            RtlNtStatusToDosErrorNoTeb
+0x000000007716c968 0x0000000077338580 ntdll.dll            RtlEqualString
+0x000000007716c970 0x0000000077359980 ntdll.dll            ZwFreeVirtualMemory
+0x000000007716c978 0x0000000077359820 ntdll.dll            ZwWriteFile
+0x000000007716c980 0x00000000773453f0 ntdll.dll            RtlIsTextUnicode
+0x000000007716c988 0x0000000077359800 ntdll.dll            ZwReadFile
+0x000000007716c990 0x0000000077359920 ntdll.dll            ZwAllocateVirtualMemory
+0x000000007716c998 0x000000007735b050 ntdll.dll            ZwUnlockFile
+0x000000007716c9a0 0x000000007735a5d0 ntdll.dll            ZwLockFile
+0x000000007716c9a8 0x000000007730bd70 ntdll.dll            RtlDosPathNameToNtPathName_U
+0x000000007716c9b0 0x0000000077300eb0 ntdll.dll            RtlCopyUnicodeString
+0x000000007716c9b8 0x000000007735a330 ntdll.dll            ZwDeleteValueKey
+0x000000007716c9c0 0x00000000773598d0 ntdll.dll            ZwEnumerateValueKey
+0x000000007716c9c8 0x0000000077359ac0 ntdll.dll            ZwEnumerateKey
+0x000000007716c9d0 0x000000007730b2c0 ntdll.dll            RtlAppendUnicodeToString
+0x000000007716c9d8 0x000000007730c260 ntdll.dll            RtlAppendUnicodeStringToString
+0x000000007716c9e0 0x000000007730d580 ntdll.dll            RtlFormatCurrentUserKeyPath
+0x000000007716c9e8 0x0000000077301440 ntdll.dll            RtlPrefixUnicodeString
+0x000000007716c9f0 0x0000000077342810 ntdll.dll            RtlMultiByteToUnicodeSize
+0x000000007716c9f8 0x000000007731efc0 ntdll.dll            RtlMultiByteToUnicodeN
+0x000000007716ca00 0x000000007732dd50 ntdll.dll            RtlUnicodeToMultiByteN
+0x000000007716ca08 0x0000000077341ef0 ntdll.dll            RtlGetLongestNtPathLength
+0x000000007716ca10 0x0000000077308f50 ntdll.dll            CsrFreeCaptureBuffer
+0x000000007716ca18 0x0000000077307e60 ntdll.dll            CsrCaptureMessageString
+0x000000007716ca20 0x0000000077309cb0 ntdll.dll            CsrAllocateCaptureBuffer
+0x000000007716ca28 0x00000000773219b0 ntdll.dll            RtlFreeUnicodeString
+0x000000007716ca30 0x000000007735207c ntdll.dll            strncpy_s
+0x000000007716ca38 0x00000000773920f0 ntdll.dll            RtlCharToInteger
+0x000000007716ca40 0x00000000773a1d70 ntdll.dll            CsrVerifyRegion
+0x000000007716ca48 0x000000007735a910 ntdll.dll            ZwQueryInformationAtom
+0x000000007716ca50 0x00000000773b0580 ntdll.dll            RtlQueryAtomInAtomTable
+0x000000007716ca58 0x000000007735a2c0 ntdll.dll            ZwDeleteAtom
+0x000000007716ca60 0x00000000773b6c30 ntdll.dll            RtlDeleteAtomFromAtomTable
+0x000000007716ca68 0x00000000773598e0 ntdll.dll            ZwFindAtom
+0x000000007716ca70 0x000000007730a840 ntdll.dll            RtlLookupAtomInAtomTable
+0x000000007716ca78 0x0000000077359c10 ntdll.dll            ZwAddAtom
+0x000000007716ca80 0x00000000773cdb10 ntdll.dll            RtlAddAtomToAtomTable
+0x000000007716ca88 0x00000000773b8820 ntdll.dll            RtlDestroyAtomTable
+0x000000007716ca90 0x0000000077339a90 ntdll.dll            RtlCreateAtomTable
+0x000000007716ca98 0x000000007730f070 ntdll.dll            RtlIsDosDeviceName_U
+0x000000007716caa0 0x0000000077310590 ntdll.dll            RtlEqualUnicodeString
+0x000000007716caa8 0x0000000077337780 ntdll.dll            RtlReleaseRelativeName
+0x000000007716cab0 0x000000007730bc70 ntdll.dll            RtlDosPathNameToRelativeNtPathName_U
+0x000000007716cab8 0x000000007735a3f0 ntdll.dll            ZwFlushInstructionCache
+0x000000007716cac0 0x00000000773a03d0 ntdll.dll            RtlWow64GetThreadSelectorEntry
+0x000000007716cac8 0x000000007735ad60 ntdll.dll            ZwSetInformationDebugObject
+0x000000007716cad0 0x00000000773a1ce0 ntdll.dll            DbgUiGetThreadDebugObject
+0x000000007716cad8 0x00000000773b1bd0 ntdll.dll            DbgUiIssueRemoteBreakin
+0x000000007716cae0 0x00000000773a1c40 ntdll.dll            DbgUiStopDebugging
+0x000000007716cae8 0x00000000773b1c90 ntdll.dll            DbgUiDebugActiveProcess
+0x000000007716caf0 0x00000000773a1d00 ntdll.dll            DbgUiConnectToDbg
+0x000000007716caf8 0x0000000077359a00 ntdll.dll            ZwOpenProcess
+0x000000007716cb00 0x0000000077397290 ntdll.dll            CsrGetProcessId
+0x000000007716cb08 0x00000000773a1c60 ntdll.dll            DbgUiContinue
+0x000000007716cb10 0x00000000773a1a30 ntdll.dll            DbgUiConvertStateChangeStructure
+0x000000007716cb18 0x00000000773a1c90 ntdll.dll            DbgUiWaitStateChange
+0x000000007716cb20 0x00000000773a9e90 ntdll.dll            RtlCutoverTimeToSystemTime
+0x000000007716cb28 0x000000007735ae90 ntdll.dll            ZwSetSystemInformation
+0x000000007716cb30 0x00000000773419b0 ntdll.dll            RtlTimeToTimeFields
+0x000000007716cb38 0x00000000773b6e10 ntdll.dll            RtlReleasePrivilege
+0x000000007716cb40 0x000000007735aeb0 ntdll.dll            ZwSetSystemTime
+0x000000007716cb48 0x00000000773cdcf0 ntdll.dll            RtlAcquirePrivilege
+0x000000007716cb50 0x0000000077344670 ntdll.dll            RtlTimeFieldsToTime
+0x000000007716cb58 0x0000000077359930 ntdll.dll            ZwQueryInformationProcess
+0x000000007716cb60 0x00000000773441f0 ntdll.dll            RtlSetCurrentTransaction
+0x000000007716cb68 0x0000000077343880 ntdll.dll            RtlGetCurrentTransaction
+0x000000007716cb70 0x000000007734c604 ntdll.dll            wcschr
+0x000000007716cb78 0x000000007734c87c ntdll.dll            wcsstr
+0x000000007716cb80 0x000000007739cfd0 ntdll.dll            RtlPrefixString
+0x000000007716cb88 0x0000000077326f50 ntdll.dll            RtlCreateUnicodeStringFromAsciiz
+0x000000007716cb90 0x000000007731eed0 ntdll.dll            RtlAnsiStringToUnicodeString
+0x000000007716cb98 0x000000007733b490 ntdll.dll            RtlInitString
+0x000000007716cba0 0x000000007732dc70 ntdll.dll            RtlUnicodeStringToAnsiString
+0x000000007716cba8 0x000000007739d180 ntdll.dll            RtlxUnicodeStringToOemSize
+0x000000007716cbb0 0x000000007741c9f7 ntdll.dll            NlsMbCodePageTag
+0x000000007716cbb8 0x000000007730b370 ntdll.dll            RtlInitUnicodeStringEx
+0x000000007716cbc0 0x000000007730c0b0 kernel32.dll         LeaveCriticalSection
+0x000000007716cbc8 0x000000007731d190 kernel32.dll         EnterCriticalSection
+0x000000007716cbd0 0x00000000773219b0 ntdll.dll            RtlFreeUnicodeString
+0x000000007716cbd8 0x0000000077338f10 ntdll.dll            RtlDnsHostNameToComputerName
+0x000000007716cbe0 0x00000000773525b0 ntdll.dll            wcsncpy_s
+0x000000007716cbe8 0x000000007734c668 ntdll.dll            wcscspn
+0x000000007716cbf0 0x0000000077343810 ntdll.dll            RtlUnicodeToMultiByteSize
+0x000000007716cbf8 0x0000000077352364 ntdll.dll            wcscat_s
+0x000000007716cc00 0x0000000077305d00 ntdll.dll            RtlNtStatusToDosError
+0x000000007716cc08 0x000000007735240c ntdll.dll            wcscpy_s
+0x000000007716cc10 0x0000000077347adc ntdll.dll            _memicmp
+0x000000007716cc18 0x0000000077359970 ntdll.dll            ZwCreateKey
+0x000000007716cc20 0x000000007735a400 ntdll.dll            ZwFlushKey
+0x000000007716cc28 0x0000000077359da0 ntdll.dll            ZwSetValueKey
+0x000000007716cc30 0x0000000077359890 ntdll.dll            ZwClose
+0x000000007716cc38 0x0000000077359910 ntdll.dll            ZwQueryValueKey
+0x000000007716cc40 0x00000000773598c0 ntdll.dll            ZwOpenKey
+0x000000007716cc48 0x000000007732c440 ntdll.dll            RtlInitUnicodeString
+0x000000007716cc50 0x000000007731d370 kernel32.dll         DeleteCriticalSection
+0x000000007716cc58 0x000000007731d560 ntdll.dll            RtlInitializeCriticalSection
+0x000000007716cc60 0x00000000773067a0 ntdll.dll            CsrClientCallServer
+0x000000007716cc68 0x0000000077359a10 ntdll.dll            ZwSetInformationFile
+0x000000007716cc70 0x000000007735ae60 ntdll.dll            ZwSetSecurityObject
+0x000000007716cc78 0x000000007735ad30 ntdll.dll            ZwSetEaFile
+0x000000007716cc80 0x0000000077359cf0 ntdll.dll            ZwCreateFile
+0x000000007716cc88 0x0000000077343380 ntdll.dll            RtlLengthSecurityDescriptor
+0x000000007716cc90 0x000000007735aa40 ntdll.dll            ZwQuerySecurityObject
+0x000000007716cc98 0x000000007735a8f0 ntdll.dll            ZwQueryEaFile
+0x000000007716cca0 0x0000000077348478 ntdll.dll            _wcsnicmp
+0x000000007716cca8 0x0000000077359ad0 ntdll.dll            ZwOpenFile
+0x000000007716ccb0 0x00000000773598b0 ntdll.dll            ZwQueryInformationFile
+0x000000007716ccb8 0x0000000077359b30 ntdll.dll            ZwFsControlFile
+0x000000007716ccc0 0x000000007733c8a0 kernel32.dll         SetLastError
+0x000000007716ccc8 0x000000007731a1c0 kernel32.dll         HeapFree
+0x000000007716ccd0 0x0000000077343a50 ntdll.dll            RtlSetDaclSecurityDescriptor
+0x000000007716ccd8 0x00000000773438a0 ntdll.dll            RtlSetGroupSecurityDescriptor
+0x000000007716cce0 0x00000000773438f0 ntdll.dll            RtlSetOwnerSecurityDescriptor
+0x000000007716cce8 0x00000000773437e0 ntdll.dll            RtlCreateSecurityDescriptor
+0x000000007716ccf0 0x0000000077309030 ntdll.dll            RtlAddAccessAllowedAce
+0x000000007716ccf8 0x00000000773439a0 ntdll.dll            RtlCreateAcl
+0x000000007716cd00 0x0000000077317a30 kernel32.dll         HeapAlloc
+0x000000007716cd08 0x0000000077359d20 ntdll.dll            ZwOpenDirectoryObject
+0x000000007716cd10 0x0000000077359cc0 ntdll.dll            ZwResumeThread
+0x000000007716cd18 0x000000007735ab70 ntdll.dll            ZwRemoveProcessDebug
+0x000000007716cd20 0x0000000077324a40 ntdll.dll            RtlGetFullPathName_UstrEx
+0x000000007716cd28 0x00000000773d0b60 ntdll.dll            LdrQueryImageFileKeyOption
+0x000000007716cd30 0x0000000077330640 ntdll.dll            RtlDestroyProcessParameters
+0x000000007716cd38 0x000000007734c7c0 ntdll.dll            wcspbrk
+0x000000007716cd40 0x000000007730a330 ntdll.dll            RtlCreateProcessParametersEx
+0x000000007716cd48 0x00000000772fbed0 ntdll.dll            DbgPrint
+0x000000007716cd50 0x000000007735a270 ntdll.dll            ZwCreateUserProcess
+0x000000007716cd58 0x000000007738e4b0 ntdll.dll            RtlKnownExceptionFilter
+0x000000007716cd60 0x000000007733bc90 ntdll.dll            RtlDecodePointer
+0x000000007716cd68 0x0000000077359d50 ntdll.dll            ZwWaitForMultipleObjects
+0x000000007716cd70 0x0000000077309a70 ntdll.dll            CsrClientConnectToServer
+0x000000007716cd78 0x0000000077359c00 ntdll.dll            ZwYieldExecution
+0x000000007716cd80 0x00000000773d4c20 ntdll.dll            RtlCreateHeap
+0x000000007716cd88 0x00000000773c66d0 ntdll.dll            RtlDestroyHeap
+0x000000007716cd90 0x000000007735a0c0 ntdll.dll            ZwConnectPort
+0x000000007716cd98 0x00000000773599c0 ntdll.dll            ZwRequestWaitReplyPort
+0x000000007716cda0 0x0000000077351e58 ntdll.dll            strcat_s
+0x000000007716cda8 0x0000000077359900 ntdll.dll            ZwQueryKey
+0x000000007716cdb0 0x000000007739ddf0 ntdll.dll            RtlValidRelativeSecurityDescriptor
+0x000000007716cdb8 0x000000007735a300 ntdll.dll            ZwDeleteKey
+0x000000007716cdc0 0x000000007735b020 ntdll.dll            ZwUnloadKey
+0x000000007716cdc8 0x000000007735a5a0 ntdll.dll            ZwLoadKey
+0x000000007716cdd0 0x000000007735a690 ntdll.dll            ZwNotifyChangeMultipleKeys
+0x000000007716cdd8 0x000000007735ac00 ntdll.dll            ZwRestoreKey
+0x000000007716cde0 0x000000007735ac70 ntdll.dll            ZwSaveKeyEx
+0x000000007716cde8 0x0000000077343a30 ntdll.dll            RtlLengthSid
+0x000000007716cdf0 0x000000007733a2b0 ntdll.dll            RtlMakeSelfRelativeSD
+0x000000007716cdf8 0x0000000077359b90 ntdll.dll            ZwReadVirtualMemory
+0x000000007716ce00 0x000000007732af80 ntdll.dll            LdrResSearchResource
+0x000000007716ce08 0x000000007734807c ntdll.dll            _strnicmp
+0x000000007716ce10 0x000000007734b770 ntdll.dll            strncmp
+0x000000007716ce18 0x0000000077359bc0 ntdll.dll            ZwDuplicateToken
+0x000000007716ce20 0x00000000773ae4b0 ntdll.dll            RtlWerpReportException
+0x000000007716ce28 0x00000000773a5330 ntdll.dll            RtlTryAcquirePebLock
+0x000000007716ce30 0x00000000773482b0 ntdll.dll            _vsnprintf
+0x000000007716ce38 0x00000000773443d0 ntdll.dll            RtlReleasePebLock
+0x000000007716ce40 0x0000000077359b80 ntdll.dll            ZwClearEvent
+0x000000007716ce48 0x00000000773070a0 ntdll.dll            LdrUnlockLoaderLock
+0x000000007716ce50 0x00000000773eb9d0 ntdll.dll            WerReportSQMEvent
+0x000000007716ce58 0x000000007732e1c0 ntdll.dll            LdrLockLoaderLock
+0x000000007716ce60 0x00000000773432a0 ntdll.dll            VerSetConditionMask
+0x000000007716ce68 0x000000007733b4f0 ntdll.dll            WinSqmIsOptedIn
+0x000000007716ce70 0x0000000077359de0 ntdll.dll            ZwAccessCheck
+0x000000007716ce78 0x00000000773483cc ntdll.dll            _wcsicmp
+0x000000007716ce80 0x000000007732c120 ntdll.dll            RtlExitUserProcess
+0x000000007716ce88 0x0000000077333ea0 ntdll.dll            RtlExitUserThread
+0x000000007716ce90 0x0000000077346e90 ntdll.dll            memmove
+0x000000007716ce98 0x000000007735a6f0 ntdll.dll            ZwOpenKeyEx
+0x000000007716cea0 0x000000007735ad90 ntdll.dll            ZwSetInformationKey
+0x000000007716cea8 0x000000007735a710 ntdll.dll            ZwOpenKeyTransactedEx
+0x000000007716ceb0 0x0000000077349cc0 ntdll.dll            memset
+0x000000007716ceb8 0x00000000773471cc ntdll.dll            __C_specific_handler
+0x000000007716cec0 0x0000000077349be0 ntdll.dll            memcmp
+0x000000007716cec8 0x0000000077346e90 ntdll.dll            memmove
+0x000000007716ced0 0x0000000077347a20 ntdll.dll            _local_unwind
+0x000000007716cee0 0x000007fefd18d4b0 KERNELBASE.dll       BaseReleaseProcessExePath
+0x000000007716cee8 0x000007fefd19a090 KERNELBASE.dll       BaseReleaseProcessDllPath
+0x000000007716cef0 0x000007fefd18d4c0 KERNELBASE.dll       BaseGetProcessExePath
+0x000000007716cef8 0x000007fefd18f7d0 KERNELBASE.dll       BaseGetProcessDllPath
+0x000000007716cf00 0x000007fefd18e6a0 KERNELBASE.dll       LoadStringByReference
+0x000000007716cf08 0x000007fefd182400 KERNELBASE.dll       InternalLcidToName
+0x000000007716cf10 0x000007fefd1c03e0 KERNELBASE.dll       GetPtrCalDataArray
+0x000000007716cf18 0x000007fefd18be00 KERNELBASE.dll       NlsIsUserDefaultLocale
+0x000000007716cf20 0x000007fefd1b49a0 KERNELBASE.dll       GetPtrCalData
+0x000000007716cf28 0x000007fefd191bd0 KERNELBASE.dll       GetUserInfo
+0x000000007716cf30 0x000007fefd1bb710 KERNELBASE.dll       GetStringTableEntry
+0x000000007716cf38 0x000007fefd1bf060 KERNELBASE.dll       CheckGroupPolicyEnabled
+0x000000007716cf40 0x000007fefd1834d0 KERNELBASE.dll       OpenRegKey
+0x000000007716cf48 0x000007fefd181b70 KERNELBASE.dll       GetCPHashNode
+0x000000007716cf50 0x000007fefd1c5f00 KERNELBASE.dll       Internal_EnumLanguageGroupLocales
+0x000000007716cf58 0x000007fefd184310 KERNELBASE.dll       SpecialMBToWC
+0x000000007716cf60 0x000007fefd1c6200 KERNELBASE.dll       Internal_EnumSystemLanguageGroups
+0x000000007716cf68 0x000007fefd1993d0 KERNELBASE.dll       Internal_EnumUILanguages
+0x000000007716cf70 0x000007fefd1c4f20 KERNELBASE.dll       Internal_EnumDateFormats
+0x000000007716cf78 0x000007fefd18b430 KERNELBASE.dll       NlsValidateLocale
+0x000000007716cf80 0x000007fefd1c5c90 KERNELBASE.dll       Internal_EnumSystemCodePages
+0x000000007716cf88 0x000007fefd1c5110 KERNELBASE.dll       Internal_EnumCalendarInfo
+0x000000007716cf90 0x000007fefd1c5060 KERNELBASE.dll       Internal_EnumTimeFormats
+0x000000007716cf98 0x000007fefd18be30 KERNELBASE.dll       GetCalendar
+0x000000007716cfa0 0x000007fefd184940 KERNELBASE.dll       GetLocaleInfoHelper
+0x000000007716cfa8 0x000007fefd18bcb0 KERNELBASE.dll       GetUserInfoWord
+0x000000007716cfb0 0x000007fefd187740 KERNELBASE.dll       GetNamedLocaleHashNode
+0x000000007716cfb8 0x000007fefd18da50 KERNELBASE.dll       LCIDToLocaleName
+0x000000007716cfc0 0x000007fefd1c11e0 KERNELBASE.dll       GetUserDefaultLocaleName
+0x000000007716cfc8 0x000007fefd1c04a0 KERNELBASE.dll       GetSystemDefaultLocaleName
+0x000000007716cfd0 0x000007fefd1c2ea0 KERNELBASE.dll       GetNumberFormatEx
+0x000000007716cfd8 0x000007fefd1c10f0 KERNELBASE.dll       GetEraNameCountedString
+0x000000007716cfe0 0x000007fefd1c2d80 KERNELBASE.dll       GetCurrencyFormatEx
+0x000000007716cfe8 0x000007fefd1c6600 KERNELBASE.dll       EnumTimeFormatsEx
+0x000000007716cff0 0x000007fefd1c64e0 KERNELBASE.dll       EnumDateFormatsExEx
+0x000000007716cff8 0x000007fefd1c66b0 KERNELBASE.dll       EnumCalendarInfoExEx
+0x000000007716d000 0x000007fefd1b0f20 KERNELBASE.dll       VirtualAllocExNuma
+0x000000007716d008 0x000007fefd19a040 KERNELBASE.dll       SetFileApisToOEM
+0x000000007716d010 0x000007fefd1b6600 KERNELBASE.dll       SetFileApisToANSI
+0x000000007716d018 0x000007fefd1b11e0 KERNELBASE.dll       MapViewOfFileExNuma
+0x000000007716d020 0x000007fefd196630 KERNELBASE.dll       IsDBCSLeadByteEx
+0x000000007716d028 0x000007fefd1832d0 KERNELBASE.dll       KernelBaseGetGlobalData
+0x000000007716d030 0x000007fefd1bb580 KERNELBASE.dll       InvalidateTzSpecificCache
+0x000000007716d038 0x000007fefd18d320 KERNELBASE.dll       IsDBCSLeadByte
+0x000000007716d040 0x000007fefd193cf0 KERNELBASE.dll       CreateFileMappingNumaW
+0x000000007716d048 0x000007fefd183fd0 KERNELBASE.dll       CompareStringA
+0x000000007716d050 0x000007fefd18b9e0 KERNELBASE.dll       LoadStringBaseExW
+0x000000007716d058 0x000007fefd1bd590 KERNELBASE.dll       BaseInvalidateDllSearchPathCache
+0x000000007716d060 0x000007fefd1bd570 KERNELBASE.dll       BaseInvalidateProcessSearchPathCache
+0x000000007716d068 0x000007fefd18d470 KERNELBASE.dll       BaseDllFreeResourceId
+0x000000007716d070 0x000007fefd189510 KERNELBASE.dll       BaseDllMapResourceIdW
+0x000000007716d078 0x000007fefd1993c0 KERNELBASE.dll       EnumUILanguagesW
+0x000000007716d080 0x000007fefd19a9f0 KERNELBASE.dll       GetUserDefaultUILanguage
+0x000000007716d088 0x000007fefd1b65d0 KERNELBASE.dll       AreFileApisANSI
+0x000000007716d090 0x000007fefd1c6730 KERNELBASE.dll       EnumCalendarInfoExW
+0x000000007716d098 0x000007fefd1c67a0 KERNELBASE.dll       EnumCalendarInfoW
+0x000000007716d0a0 0x000007fefd1c6540 KERNELBASE.dll       EnumDateFormatsExW
+0x000000007716d0a8 0x000007fefd1c65a0 KERNELBASE.dll       EnumDateFormatsW
+0x000000007716d0b0 0x000007fefd1c6830 KERNELBASE.dll       EnumLanguageGroupLocalesW
+0x000000007716d0b8 0x000007fefd1c6810 KERNELBASE.dll       EnumSystemCodePagesW
+0x000000007716d0c0 0x000007fefd1c6850 KERNELBASE.dll       EnumSystemLanguageGroupsW
+0x000000007716d0c8 0x000007fefd1c2130 KERNELBASE.dll       EnumSystemLocalesEx
+0x000000007716d0d0 0x000007fefd1c2170 KERNELBASE.dll       EnumSystemLocalesW
+0x000000007716d0d8 0x000007fefd1c6660 KERNELBASE.dll       EnumTimeFormatsW
+0x000000007716d0e0 0x000007fefd187e60 KERNELBASE.dll       GetLocaleInfoA
+0x000000007716d0e8 0x000007fefd1c4390 KERNELBASE.dll       GetStringTypeA
+0x000000007716d0f0 0x000007fefd199250 KERNELBASE.dll       GetSystemDefaultUILanguage
+0x000000007716d100 0x000007fefd18b070 KERNELBASE.dll       OpenProcessToken
+0x000000007716d108 0x000007fefd1b0cf0 KERNELBASE.dll       QueryProcessAffinityUpdateMode
+0x000000007716d110 0x000007fefd1b0d50 KERNELBASE.dll       SetProcessAffinityUpdateMode
+0x000000007716d118 0x000007fefd1812d0 KERNELBASE.dll       TlsSetValue
+0x000000007716d120 0x000007fefd18ef90 KERNELBASE.dll       TlsFree
+0x000000007716d128 0x000007fefd18f4f0 KERNELBASE.dll       TlsAlloc
+0x000000007716d130 0x000007fefd192770 KERNELBASE.dll       TerminateThread
+0x000000007716d138 0x000007fefd1b0c90 KERNELBASE.dll       TerminateProcess
+0x000000007716d140 0x000007fefd1837c0 KERNELBASE.dll       SwitchToThread
+0x000000007716d148 0x000007fefd188e90 KERNELBASE.dll       SuspendThread
+0x000000007716d150 0x000007fefd18cec0 KERNELBASE.dll       SetThreadStackGuarantee
+0x000000007716d158 0x000007fefd1b0840 KERNELBASE.dll       SetThreadPriorityBoost
+0x000000007716d160 0x000007fefd195990 KERNELBASE.dll       SetThreadPriority
+0x000000007716d168 0x000007fefd195800 KERNELBASE.dll       SetProcessShutdownParameters
+0x000000007716d170 0x000007fefd1ba430 KERNELBASE.dll       SetPriorityClass
+0x000000007716d178 0x000007fefd188e60 KERNELBASE.dll       ResumeThread
+0x000000007716d180 0x000007fefd183be0 KERNELBASE.dll       QueueUserAPC
+0x000000007716d188 0x000007fefd18bb10 KERNELBASE.dll       ProcessIdToSessionId
+0x000000007716d190 0x000007fefd191590 KERNELBASE.dll       OpenThread
+0x000000007716d198 0x000007fefd1b07f0 KERNELBASE.dll       GetThreadPriorityBoost
+0x000000007716d1a0 0x000007fefd183f20 KERNELBASE.dll       GetThreadPriority
+0x000000007716d1a8 0x000007fefd1909b0 KERNELBASE.dll       GetStartupInfoW
+0x000000007716d1b0 0x000007fefd197e90 KERNELBASE.dll       GetProcessTimes
+0x000000007716d1b8 0x000007fefd1b0ae0 KERNELBASE.dll       GetPriorityClass
+0x000000007716d1c0 0x000007fefd18b970 KERNELBASE.dll       GetExitCodeThread
+0x000000007716d1c8 0x000007fefd181390 KERNELBASE.dll       GetCurrentThreadId
+0x000000007716d1d0 0x000007fefd181350 KERNELBASE.dll       GetCurrentThread
+0x000000007716d1d8 0x000007fefd1929a0 KERNELBASE.dll       GetProcessId
+0x000000007716d1e0 0x000007fefd1b5ea0 KERNELBASE.dll       GetProcessIdOfThread
+0x000000007716d1e8 0x000007fefd1b5ee0 KERNELBASE.dll       GetThreadId
+0x000000007716d1f0 0x000007fefd1818a0 KERNELBASE.dll       GetCurrentProcessId
+0x000000007716d1f8 0x000007fefd18bec0 KERNELBASE.dll       CreateRemoteThreadEx
+0x000000007716d200 0x000007fefd18f060 KERNELBASE.dll       GetExitCodeProcess
+0x000000007716d208 0x000007fefd18cc50 KERNELBASE.dll       GetProcessVersion
+0x000000007716d210 0x000007fefd1bf990 KERNELBASE.dll       CreateRemoteThread
+0x000000007716d218 0x000007fefd193068 KERNELBASE.dll       DeleteProcThreadAttributeList
+0x000000007716d220 0x000007fefd195140 KERNELBASE.dll       UpdateProcThreadAttribute
+0x000000007716d228 0x000007fefd1950c0 KERNELBASE.dll       InitializeProcThreadAttributeList
+0x000000007716d230 0x000007fefd1813e0 KERNELBASE.dll       GetCurrentProcess
+0x000000007716d240 0x000007fefd18b150 KERNELBASE.dll       HeapDestroy
+0x000000007716d248 0x000007fefd196ca0 KERNELBASE.dll       HeapWalk
+0x000000007716d250 0x000007fefd1b0780 KERNELBASE.dll       HeapValidate
+0x000000007716d258 0x000007fefd196d80 KERNELBASE.dll       HeapUnlock
+0x000000007716d260 0x000007fefd1b5de0 KERNELBASE.dll       HeapSummary
+0x000000007716d268 0x000007fefd18f630 KERNELBASE.dll       HeapSetInformation
+0x000000007716d270 0x000007fefd1b0720 KERNELBASE.dll       HeapQueryInformation
+0x000000007716d278 0x000007fefd196da0 KERNELBASE.dll       HeapLock
+0x000000007716d280 0x000007fefd18c4f0 KERNELBASE.dll       HeapCreate
+0x000000007716d288 0x000007fefd1b0760 KERNELBASE.dll       HeapCompact
+0x000000007716d290 0x000007fefd1b0770 KERNELBASE.dll       GetProcessHeaps
+0x000000007716d298 0x000007fefd181880 KERNELBASE.dll       GetProcessHeap
+0x000000007716d2a8 0x000007fefd1b0fe0 KERNELBASE.dll       WriteProcessMemory
+0x000000007716d2b0 0x000007fefd192f30 KERNELBASE.dll       OpenFileMappingW
+0x000000007716d2b8 0x000007fefd192b00 KERNELBASE.dll       CreateFileMappingW
+0x000000007716d2c0 0x000007fefd1b1190 KERNELBASE.dll       FlushViewOfFile
+0x000000007716d2c8 0x000007fefd192c20 KERNELBASE.dll       MapViewOfFile
+0x000000007716d2d0 0x000007fefd192a50 KERNELBASE.dll       MapViewOfFileEx
+0x000000007716d2d8 0x000007fefd1b0e30 KERNELBASE.dll       VirtualQueryEx
+0x000000007716d2e0 0x000007fefd182fd0 KERNELBASE.dll       VirtualQuery
+0x000000007716d2e8 0x000007fefd193a50 KERNELBASE.dll       VirtualProtectEx
+0x000000007716d2f0 0x000007fefd193a20 KERNELBASE.dll       VirtualProtect
+0x000000007716d2f8 0x000007fefd1b0e70 KERNELBASE.dll       VirtualFreeEx
+0x000000007716d300 0x000007fefd188680 KERNELBASE.dll       VirtualFree
+0x000000007716d308 0x000007fefd1b0fb0 KERNELBASE.dll       VirtualAllocEx
+0x000000007716d310 0x000007fefd195900 KERNELBASE.dll       ReadProcessMemory
+0x000000007716d318 0x000007fefd18ef20 KERNELBASE.dll       UnmapViewOfFile
+0x000000007716d320 0x000007fefd1818f0 KERNELBASE.dll       VirtualAlloc
+0x000000007716d330 0x000007fefd182d50 KERNELBASE.dll       DuplicateHandle
+0x000000007716d338 0x000007fefd1bad20 KERNELBASE.dll       GetHandleInformation
+0x000000007716d340 0x000007fefd1bac20 KERNELBASE.dll       SetHandleInformation
+0x000000007716d348 0x000007fefd181850 KERNELBASE.dll       CloseHandle
+0x000000007716d358 0x000007fefd181040 KERNELBASE.dll       WaitForSingleObjectEx
+0x000000007716d360 0x000007fefd181480 KERNELBASE.dll       WaitForMultipleObjectsEx
+0x000000007716d368 0x000007fefd181150 KERNELBASE.dll       SleepEx
+0x000000007716d370 0x000007fefd18c710 KERNELBASE.dll       SetWaitableTimer
+0x000000007716d378 0x000007fefd181320 KERNELBASE.dll       SetEvent
+0x000000007716d380 0x000007fefd1818c0 KERNELBASE.dll       ResetEvent
+0x000000007716d388 0x000007fefd182c70 KERNELBASE.dll       CreateEventW
+0x000000007716d390 0x000007fefd183a50 KERNELBASE.dll       CreateEventA
+0x000000007716d398 0x000007fefd183ed0 KERNELBASE.dll       CancelWaitableTimer
+0x000000007716d3a0 0x000007fefd1ba0c0 KERNELBASE.dll       CreateEventExA
+0x000000007716d3a8 0x000007fefd182ca0 KERNELBASE.dll       CreateEventExW
+0x000000007716d3b0 0x000007fefd192e80 KERNELBASE.dll       CreateMutexA
+0x000000007716d3b8 0x000007fefd192ea0 KERNELBASE.dll       CreateMutexExA
+0x000000007716d3c0 0x000007fefd18aab0 KERNELBASE.dll       CreateMutexExW
+0x000000007716d3c8 0x000007fefd18ab50 KERNELBASE.dll       CreateMutexW
+0x000000007716d3d0 0x000007fefd1886e0 KERNELBASE.dll       CreateSemaphoreExW
+0x000000007716d3d8 0x000007fefd1ba000 KERNELBASE.dll       CreateWaitableTimerExW
+0x000000007716d3e0 0x000007fefd1832b0 KERNELBASE.dll       InitializeCriticalSectionAndSpinCount
+0x000000007716d3e8 0x000007fefd18ff70 KERNELBASE.dll       InitializeCriticalSectionEx
+0x000000007716d3f0 0x000007fefd188ce0 KERNELBASE.dll       OpenEventA
+0x000000007716d3f8 0x000007fefd183990 KERNELBASE.dll       OpenEventW
+0x000000007716d400 0x000007fefd194000 KERNELBASE.dll       OpenMutexW
+0x000000007716d408 0x000007fefd188900 KERNELBASE.dll       ReleaseSemaphore
+0x000000007716d410 0x000007fefd19abc0 KERNELBASE.dll       OpenProcess
+0x000000007716d418 0x000007fefd1b6120 KERNELBASE.dll       OpenSemaphoreW
+0x000000007716d420 0x000007fefd1b6050 KERNELBASE.dll       OpenWaitableTimerW
+0x000000007716d428 0x000007fefd181010 KERNELBASE.dll       ReleaseMutex
+0x000000007716d438 0x000007fefd18a6e0 KERNELBASE.dll       CreateDirectoryW
+0x000000007716d440 0x000007fefd1bc810 KERNELBASE.dll       RemoveDirectoryW
+0x000000007716d448 0x000007fefd1bd5e0 KERNELBASE.dll       DefineDosDeviceW
+0x000000007716d450 0x000007fefd1bb270 KERNELBASE.dll       FindFirstFileExA
+0x000000007716d458 0x000007fefd186e20 KERNELBASE.dll       FindFirstFileExW
+0x000000007716d460 0x000007fefd187890 KERNELBASE.dll       GetFullPathNameW
+0x000000007716d468 0x000007fefd1871c0 KERNELBASE.dll       GetFileType
+0x000000007716d470 0x000007fefd19af50 KERNELBASE.dll       FlushFileBuffers
+0x000000007716d478 0x000007fefd195f60 KERNELBASE.dll       SetFileAttributesW
+0x000000007716d480 0x000007fefd189f30 KERNELBASE.dll       GetFileAttributesExW
+0x000000007716d488 0x000007fefd195600 KERNELBASE.dll       DeleteFileW
+0x000000007716d490 0x000007fefd18af60 KERNELBASE.dll       GetFileAttributesA
+0x000000007716d498 0x000007fefd199940 KERNELBASE.dll       GetFullPathNameA
+0x000000007716d4a0 0x000007fefd189a90 KERNELBASE.dll       QueryDosDeviceW
+0x000000007716d4a8 0x000007fefd186940 KERNELBASE.dll       CreateFileW
+0x000000007716d4b0 0x000007fefd1b1810 KERNELBASE.dll       SetEndOfFile
+0x000000007716d4b8 0x000007fefd181ab0 KERNELBASE.dll       WriteFile
+0x000000007716d4c0 0x000007fefd1b1750 KERNELBASE.dll       LockFile
+0x000000007716d4c8 0x000007fefd187350 KERNELBASE.dll       GetFileSize
+0x000000007716d4d0 0x000007fefd1819f0 KERNELBASE.dll       ReadFile
+0x000000007716d4d8 0x000007fefd18ae00 KERNELBASE.dll       SetFilePointer
+0x000000007716d4e0 0x000007fefd1ba610 KERNELBASE.dll       WriteFileEx
+0x000000007716d4e8 0x000007fefd18a850 KERNELBASE.dll       SetFileTime
+0x000000007716d4f0 0x000007fefd1b13b0 KERNELBASE.dll       WriteFileGather
+0x000000007716d4f8 0x000007fefd1bc080 KERNELBASE.dll       GetFinalPathNameByHandleA
+0x000000007716d500 0x000007fefd197310 KERNELBASE.dll       GetFinalPathNameByHandleW
+0x000000007716d508 0x000007fefd186d60 KERNELBASE.dll       FindClose
+0x000000007716d510 0x000007fefd1b5b90 KERNELBASE.dll       GetDiskFreeSpaceW
+0x000000007716d518 0x000007fefd195b60 KERNELBASE.dll       DeleteFileA
+0x000000007716d520 0x000007fefd19a600 KERNELBASE.dll       GetFileTime
+0x000000007716d528 0x000007fefd1b5aa0 KERNELBASE.dll       GetLogicalDriveStringsW
+0x000000007716d530 0x000007fefd187160 KERNELBASE.dll       FindFirstFileW
+0x000000007716d538 0x000007fefd188180 KERNELBASE.dll       FindNextFileW
+0x000000007716d540 0x000007fefd1b9950 KERNELBASE.dll       GetTempFileNameW
+0x000000007716d548 0x000007fefd195c00 KERNELBASE.dll       GetVolumeInformationW
+0x000000007716d550 0x000007fefd1879f0 KERNELBASE.dll       CompareFileTime
+0x000000007716d558 0x000007fefd1b8c70 KERNELBASE.dll       CreateDirectoryA
+0x000000007716d560 0x000007fefd182600 KERNELBASE.dll       FileTimeToLocalFileTime
+0x000000007716d568 0x000007fefd1872b0 KERNELBASE.dll       FileTimeToSystemTime
+0x000000007716d570 0x000007fefd1b8a80 KERNELBASE.dll       FindCloseChangeNotification
+0x000000007716d578 0x000007fefd1bb3d0 KERNELBASE.dll       FindFirstFileA
+0x000000007716d580 0x000007fefd1b8a90 KERNELBASE.dll       FindFirstChangeNotificationA
+0x000000007716d588 0x000007fefd196810 KERNELBASE.dll       FindFirstChangeNotificationW
+0x000000007716d590 0x000007fefd1b0310 KERNELBASE.dll       FindNextChangeNotification
+0x000000007716d598 0x000007fefd1b8b10 KERNELBASE.dll       FindNextFileA
+0x000000007716d5a0 0x000007fefd1b98d0 KERNELBASE.dll       GetDiskFreeSpaceA
+0x000000007716d5a8 0x000007fefd1b9860 KERNELBASE.dll       GetDiskFreeSpaceExA
+0x000000007716d5b0 0x000007fefd1997c0 KERNELBASE.dll       GetDiskFreeSpaceExW
+0x000000007716d5b8 0x000007fefd1b15f0 KERNELBASE.dll       UnlockFileEx
+0x000000007716d5c0 0x000007fefd1bc220 KERNELBASE.dll       GetDriveTypeA
+0x000000007716d5c8 0x000007fefd18f280 KERNELBASE.dll       GetDriveTypeW
+0x000000007716d5d0 0x000007fefd1b8c20 KERNELBASE.dll       GetFileAttributesExA
+0x000000007716d5d8 0x000007fefd182ee0 KERNELBASE.dll       GetFileAttributesW
+0x000000007716d5e0 0x000007fefd1938a0 KERNELBASE.dll       GetFileInformationByHandle
+0x000000007716d5e8 0x000007fefd1958b0 KERNELBASE.dll       GetFileSizeEx
+0x000000007716d5f0 0x000007fefd195da0 KERNELBASE.dll       GetVolumeInformationByHandleW
+0x000000007716d5f8 0x000007fefd1b1e70 KERNELBASE.dll       LocalFileTimeToFileTime
+0x000000007716d600 0x000007fefd1b1670 KERNELBASE.dll       LockFileEx
+0x000000007716d608 0x000007fefd1b1480 KERNELBASE.dll       ReadFileScatter
+0x000000007716d610 0x000007fefd1ba710 KERNELBASE.dll       ReadFileEx
+0x000000007716d618 0x000007fefd1bceb0 KERNELBASE.dll       RemoveDirectoryA
+0x000000007716d620 0x000007fefd196750 KERNELBASE.dll       SetFileAttributesA
+0x000000007716d628 0x000007fefd1b8760 KERNELBASE.dll       SetFileInformationByHandle
+0x000000007716d630 0x000007fefd19ad10 KERNELBASE.dll       SetFilePointerEx
+0x000000007716d638 0x000007fefd1b1350 KERNELBASE.dll       SetFileValidData
+0x000000007716d640 0x000007fefd1ba810 KERNELBASE.dll       UnlockFile
+0x000000007716d650 0x000007fefd1816f0 KERNELBASE.dll       PostQueuedCompletionStatus
+0x000000007716d658 0x000007fefd1b2030 KERNELBASE.dll       GetQueuedCompletionStatusEx
+0x000000007716d660 0x000007fefd181660 KERNELBASE.dll       GetQueuedCompletionStatus
+0x000000007716d668 0x000007fefd182570 KERNELBASE.dll       CreateIoCompletionPort
+0x000000007716d670 0x000007fefd1b1560 KERNELBASE.dll       CancelIoEx
+0x000000007716d678 0x000007fefd188a50 KERNELBASE.dll       GetOverlappedResult
+0x000000007716d680 0x000007fefd18c410 KERNELBASE.dll       DeviceIoControl
+0x000000007716d690 0x000007fefd188510 KERNELBASE.dll       ChangeTimerQueueTimer
+0x000000007716d698 0x000007fefd1b1a50 KERNELBASE.dll       CreateTimerQueue
+0x000000007716d6a0 0x000007fefd188550 KERNELBASE.dll       CreateTimerQueueTimer
+0x000000007716d6a8 0x000007fefd1885d0 KERNELBASE.dll       DeleteTimerQueueTimer
+0x000000007716d6b0 0x000007fefd1928b0 KERNELBASE.dll       UnregisterWaitEx
+0x000000007716d6b8 0x000007fefd1b1a00 KERNELBASE.dll       DeleteTimerQueueEx
+0x000000007716d6c8 0x000007fefd189650 KERNELBASE.dll       LoadResource
+0x000000007716d6d0 0x000007fefd1896f0 KERNELBASE.dll       LockResource
+0x000000007716d6d8 0x000007fefd1896a0 KERNELBASE.dll       SizeofResource
+0x000000007716d6e0 0x000007fefd183f70 KERNELBASE.dll       FreeLibraryAndExitThread
+0x000000007716d6e8 0x000007fefd18b1c0 KERNELBASE.dll       GetModuleHandleExW
+0x000000007716d6f0 0x000007fefd1832e0 KERNELBASE.dll       GetModuleHandleW
+0x000000007716d6f8 0x000007fefd183440 KERNELBASE.dll       GetModuleHandleA
+0x000000007716d700 0x000007fefd1829f0 KERNELBASE.dll       GetModuleFileNameA
+0x000000007716d708 0x000007fefd19a5c0 KERNELBASE.dll       FreeResource
+0x000000007716d710 0x000007fefd1b4e60 KERNELBASE.dll       FindStringOrdinal
+0x000000007716d718 0x000007fefd18b0d0 KERNELBASE.dll       DisableThreadLibraryCalls
+0x000000007716d720 0x000007fefd1828b0 KERNELBASE.dll       GetModuleFileNameW
+0x000000007716d728 0x000007fefd189560 KERNELBASE.dll       FindResourceExW
+0x000000007716d730 0x000007fefd18ee10 KERNELBASE.dll       LoadLibraryExA
+0x000000007716d738 0x000007fefd18b020 KERNELBASE.dll       FreeLibrary
+0x000000007716d740 0x000007fefd183360 KERNELBASE.dll       GetProcAddress
+0x000000007716d748 0x000007fefd18b2b0 KERNELBASE.dll       LoadLibraryExW
+0x000000007716d750 0x000007fefd19a0b0 KERNELBASE.dll       GetModuleHandleExA
+0x000000007716d760 0x000007fefd18c900 KERNELBASE.dll       GetNamedPipeAttribute
+0x000000007716d768 0x000007fefd1969c0 KERNELBASE.dll       CreateNamedPipeW
+0x000000007716d770 0x000007fefd1b66e0 KERNELBASE.dll       WaitNamedPipeW
+0x000000007716d778 0x000007fefd19b2f0 KERNELBASE.dll       SetNamedPipeHandleState
+0x000000007716d780 0x000007fefd182670 KERNELBASE.dll       TransactNamedPipe
+0x000000007716d788 0x000007fefd18c8a0 KERNELBASE.dll       GetNamedPipeClientComputerNameW
+0x000000007716d790 0x000007fefd19b4e0 KERNELBASE.dll       ConnectNamedPipe
+0x000000007716d798 0x000007fefd192230 KERNELBASE.dll       CreatePipe
+0x000000007716d7a0 0x000007fefd18c9f0 KERNELBASE.dll       DisconnectNamedPipe
+0x000000007716d7a8 0x000007fefd184790 KERNELBASE.dll       PeekNamedPipe
+0x000000007716d7b8 0x000007fefd1b0940 KERNELBASE.dll       PulseEvent
+0x000000007716d7c0 0x000007fefd181140 KERNELBASE.dll       Sleep
+0x000000007716d7c8 0x000007fefd1b1310 KERNELBASE.dll       Wow64DisableWow64FsRedirection
+0x000000007716d7d0 0x000007fefd1b12e0 KERNELBASE.dll       Wow64RevertWow64FsRedirection
+0x000000007716d7d8 0x000007fefd191260 KERNELBASE.dll       NeedCurrentDirectoryForExePathW
+0x000000007716d7e0 0x000007fefd1b1b10 KERNELBASE.dll       lstrcpynW
+0x000000007716d7e8 0x000007fefd181730 KERNELBASE.dll       lstrlenA
+0x000000007716d7f0 0x000007fefd1b63e0 KERNELBASE.dll       FatalAppExitA
+0x000000007716d7f8 0x000007fefd1b6220 KERNELBASE.dll       NeedCurrentDirectoryForExePathA
+0x000000007716d800 0x000007fefd1926d0 KERNELBASE.dll       LocalUnlock
+0x000000007716d808 0x000007fefd188ec0 KERNELBASE.dll       LocalReAlloc
+0x000000007716d810 0x000007fefd192640 KERNELBASE.dll       LocalLock
+0x000000007716d818 0x000007fefd1c6d10 KERNELBASE.dll       LCMapStringA
+0x000000007716d820 0x000007fefd19aad0 KERNELBASE.dll       IsWow64Process
+0x000000007716d828 0x000007fefd18f780 KERNELBASE.dll       IsProcessInJob
+0x000000007716d830 0x000007fefd18d000 KERNELBASE.dll       GlobalAlloc
+0x000000007716d838 0x000007fefd18a910 KERNELBASE.dll       FormatMessageW
+0x000000007716d840 0x000007fefd1bdff0 KERNELBASE.dll       FormatMessageA
+0x000000007716d848 0x000007fefd1b0c20 KERNELBASE.dll       FatalAppExitW
+0x000000007716d850 0x000007fefd1c2cf0 KERNELBASE.dll       EnumSystemLocalesA
+0x000000007716d858 0x000007fefd1815b0 KERNELBASE.dll       LocalAlloc
+0x000000007716d860 0x000007fefd18d680 KERNELBASE.dll       GlobalFree
+0x000000007716d868 0x000007fefd1817a0 KERNELBASE.dll       lstrlenW
+0x000000007716d870 0x000007fefd181550 KERNELBASE.dll       LocalFree
+0x000000007716d878 0x000007fefd18a2c0 KERNELBASE.dll       lstrcmpiW
+0x000000007716d880 0x000007fefd1b1ba0 KERNELBASE.dll       lstrcpynA
+0x000000007716d888 0x000007fefd18c1c0 KERNELBASE.dll       lstrcmpW
+0x000000007716d898 0x000007fefd1bb5d0 KERNELBASE.dll       SetLocalTime
+0x000000007716d8a0 0x000007fefd198bd0 KERNELBASE.dll       SystemTimeToTzSpecificLocalTime
+0x000000007716d8a8 0x000007fefd1c0050 KERNELBASE.dll       TzSpecificLocalTimeToSystemTime
+0x000000007716d8b0 0x000007fefd18ee00 KERNELBASE.dll       GetDynamicTimeZoneInformation
+0x000000007716d8b8 0x000007fefd1b0db0 KERNELBASE.dll       GetLogicalProcessorInformation
+0x000000007716d8c0 0x000007fefd192960 KERNELBASE.dll       GetWindowsDirectoryW
+0x000000007716d8c8 0x000007fefd182e80 KERNELBASE.dll       GetVersionExW
+0x000000007716d8d0 0x000007fefd18f120 KERNELBASE.dll       GetVersionExA
+0x000000007716d8d8 0x000007fefd193750 KERNELBASE.dll       GetVersion
+0x000000007716d8e0 0x000007fefd1c02f0 KERNELBASE.dll       GetTimeZoneInformationForYear
+0x000000007716d8e8 0x000007fefd183b30 KERNELBASE.dll       GetTickCount64
+0x000000007716d8f0 0x000007fefd181760 KERNELBASE.dll       GetSystemTimeAsFileTime
+0x000000007716d8f8 0x000007fefd1b1df0 KERNELBASE.dll       GetSystemTimeAdjustment
+0x000000007716d900 0x000007fefd186870 KERNELBASE.dll       GetLocalTime
+0x000000007716d908 0x000007fefd18acf0 KERNELBASE.dll       GetComputerNameExW
+0x000000007716d910 0x000007fefd186cc0 KERNELBASE.dll       GetSystemTime
+0x000000007716d918 0x000007fefd199bf0 KERNELBASE.dll       GetComputerNameExA
+0x000000007716d920 0x000007fefd18cb30 KERNELBASE.dll       GetSystemInfo
+0x000000007716d928 0x000007fefd1992b0 KERNELBASE.dll       GetLogicalProcessorInformationEx
+0x000000007716d930 0x000007fefd1817d0 KERNELBASE.dll       SystemTimeToFileTime
+0x000000007716d938 0x000007fefd189910 KERNELBASE.dll       GetTimeZoneInformation
+0x000000007716d940 0x000007fefd181120 KERNELBASE.dll       GetTickCount
+0x000000007716d948 0x000007fefd188370 KERNELBASE.dll       GlobalMemoryStatusEx
+0x000000007716d950 0x000007fefd1bb530 KERNELBASE.dll       GetWindowsDirectoryA
+0x000000007716d960 0x000007fefd1c6a50 KERNELBASE.dll       SetLocaleInfoW
+0x000000007716d968 0x000007fefd1c4560 KERNELBASE.dll       FindNLSStringEx
+0x000000007716d970 0x000007fefd1836f0 KERNELBASE.dll       SetThreadLocale
+0x000000007716d978 0x000007fefd1c3110 KERNELBASE.dll       GetCalendarInfoEx
+0x000000007716d980 0x000007fefd1c31a0 KERNELBASE.dll       GetCalendarInfoW
+0x000000007716d988 0x000007fefd1bf850 KERNELBASE.dll       NlsCheckPolicy
+0x000000007716d990 0x000007fefd181980 KERNELBASE.dll       NlsGetCacheUpdateCount
+0x000000007716d998 0x000007fefd1c72e0 KERNELBASE.dll       NlsUpdateLocale
+0x000000007716d9a0 0x000007fefd1ac4d0 KERNELBASE.dll       NlsWriteEtwEvent
+0x000000007716d9a8 0x000007fefd1be3e0 KERNELBASE.dll       NlsEventDataDescCreate
+0x000000007716d9b0 0x000007fefd1957b0 KERNELBASE.dll       ConvertDefaultLocale
+0x000000007716d9b8 0x000007fefd1c2be0 KERNELBASE.dll       VerLanguageNameW
+0x000000007716d9c0 0x000007fefd1c3230 KERNELBASE.dll       VerLanguageNameA
+0x000000007716d9c8 0x000007fefd1c21a0 KERNELBASE.dll       SetCalendarInfoW
+0x000000007716d9d0 0x000007fefd1873d0 KERNELBASE.dll       LCMapStringW
+0x000000007716d9d8 0x000007fefd187da0 KERNELBASE.dll       IsValidLocale
+0x000000007716d9e0 0x000007fefd1bf740 KERNELBASE.dll       IsValidLanguageGroup
+0x000000007716d9e8 0x000007fefd1c3310 KERNELBASE.dll       NlsUpdateSystemLocale
+0x000000007716d9f0 0x000007fefd187cc0 KERNELBASE.dll       IsValidCodePage
+0x000000007716d9f8 0x000007fefd1c44d0 KERNELBASE.dll       IsNLSDefinedString
+0x000000007716da00 0x000007fefd183010 KERNELBASE.dll       GetUserDefaultLCID
+0x000000007716da08 0x000007fefd1c1270 KERNELBASE.dll       GetUserDefaultLangID
+0x000000007716da10 0x000007fefd1ac880 KERNELBASE.dll       GetFileMUIPath
+0x000000007716da18 0x000007fefd183810 KERNELBASE.dll       GetThreadLocale
+0x000000007716da20 0x000007fefd189c60 KERNELBASE.dll       GetSystemDefaultLCID
+0x000000007716da28 0x000007fefd18aff0 KERNELBASE.dll       GetSystemDefaultLangID
+0x000000007716da30 0x000007fefd1ac7d0 KERNELBASE.dll       GetProcessPreferredUILanguages
+0x000000007716da38 0x000007fefd1908f0 KERNELBASE.dll       GetOEMCP
+0x000000007716da40 0x000007fefd191290 KERNELBASE.dll       GetLocaleInfoW
+0x000000007716da48 0x000007fefd1c3520 KERNELBASE.dll       GetCPInfoExW
+0x000000007716da50 0x000007fefd187af0 KERNELBASE.dll       GetCPInfo
+0x000000007716da58 0x000007fefd1878c0 KERNELBASE.dll       GetACP
+0x000000007716da60 0x000007fefd1c6c80 KERNELBASE.dll       FindNLSString
+0x000000007716da68 0x000007fefd198380 KERNELBASE.dll       GetLocaleInfoEx
+0x000000007716da70 0x000007fefd1ac780 KERNELBASE.dll       GetSystemPreferredUILanguages
+0x000000007716da78 0x000007fefd19ac40 KERNELBASE.dll       GetThreadPreferredUILanguages
+0x000000007716da80 0x000007fefd18c5a0 KERNELBASE.dll       GetThreadUILanguage
+0x000000007716da88 0x000007fefd1ac810 KERNELBASE.dll       GetUILanguageInfo
+0x000000007716da90 0x000007fefd1ac730 KERNELBASE.dll       GetUserPreferredUILanguages
+0x000000007716da98 0x000007fefd1c10a0 KERNELBASE.dll       IsValidLocaleName
+0x000000007716daa0 0x000007fefd1c48d0 KERNELBASE.dll       LCMapStringEx
+0x000000007716daa8 0x000007fefd19ac70 KERNELBASE.dll       LocaleNameToLCID
+0x000000007716dab0 0x000007fefd1c0f40 KERNELBASE.dll       ResolveLocaleName
+0x000000007716dab8 0x000007fefd1bda80 KERNELBASE.dll       GetFileMUIInfo
+0x000000007716dac8 0x000007fefd183920 KERNELBASE.dll       ExpandEnvironmentStringsW
+0x000000007716dad0 0x000007fefd1ba150 KERNELBASE.dll       GetEnvironmentStringsA
+0x000000007716dad8 0x000007fefd182dc0 KERNELBASE.dll       GetEnvironmentVariableW
+0x000000007716dae0 0x000007fefd1930a0 KERNELBASE.dll       SearchPathW
+0x000000007716dae8 0x000007fefd1b6530 KERNELBASE.dll       SetStdHandleEx
+0x000000007716daf0 0x000007fefd1934b0 KERNELBASE.dll       ExpandEnvironmentStringsA
+0x000000007716daf8 0x000007fefd1b61f0 KERNELBASE.dll       FreeEnvironmentStringsA
+0x000000007716db00 0x000007fefd18b890 KERNELBASE.dll       FreeEnvironmentStringsW
+0x000000007716db08 0x000007fefd18c590 KERNELBASE.dll       GetCommandLineA
+0x000000007716db10 0x000007fefd18f620 KERNELBASE.dll       GetCommandLineW
+0x000000007716db18 0x000007fefd1954f0 KERNELBASE.dll       GetCurrentDirectoryA
+0x000000007716db20 0x000007fefd1914f0 KERNELBASE.dll       GetCurrentDirectoryW
+0x000000007716db28 0x000007fefd18b8c0 KERNELBASE.dll       GetEnvironmentStringsW
+0x000000007716db30 0x000007fefd193b20 KERNELBASE.dll       SetEnvironmentStringsW
+0x000000007716db38 0x000007fefd182b20 KERNELBASE.dll       GetEnvironmentVariableA
+0x000000007716db40 0x000007fefd18f570 KERNELBASE.dll       GetStdHandle
+0x000000007716db48 0x000007fefd1b89d0 KERNELBASE.dll       SetCurrentDirectoryA
+0x000000007716db50 0x000007fefd191540 KERNELBASE.dll       SetCurrentDirectoryW
+0x000000007716db58 0x000007fefd1b0970 KERNELBASE.dll       SetEnvironmentVariableA
+0x000000007716db60 0x000007fefd191480 KERNELBASE.dll       SetEnvironmentVariableW
+0x000000007716db68 0x000007fefd191b70 KERNELBASE.dll       SetStdHandle
+0x000000007716db78 0x000007fefd188ad0 KERNELBASE.dll       CompareStringOrdinal
+0x000000007716db80 0x000007fefd1c4630 KERNELBASE.dll       CompareStringEx
+0x000000007716db88 0x000007fefd187bc0 KERNELBASE.dll       GetStringTypeW
+0x000000007716db90 0x000007fefd189c90 KERNELBASE.dll       GetStringTypeExW
+0x000000007716db98 0x000007fefd1b8030 KERNELBASE.dll       FoldStringW
+0x000000007716dba0 0x000007fefd182120 KERNELBASE.dll       CompareStringW
+0x000000007716dba8 0x000007fefd181bd0 KERNELBASE.dll       WideCharToMultiByte
+0x000000007716dbb0 0x000007fefd181f00 KERNELBASE.dll       MultiByteToWideChar
+0x000000007716dbc0 0x000007fefd1b0930 KERNELBASE.dll       DebugBreak
+0x000000007716dbc8 0x000007fefd19a8b0 KERNELBASE.dll       OutputDebugStringA
+0x000000007716dbd0 0x000007fefd1bbff0 KERNELBASE.dll       OutputDebugStringW
+0x000000007716dbd8 0x000007fefd183eb0 KERNELBASE.dll       IsDebuggerPresent
+0x000000007716dbe8 0x000000007733c8a0 kernel32.dll         SetLastError
+0x000000007716dbf0 0x000007fefd196dc0 KERNELBASE.dll       GetErrorMode
+0x000000007716dbf8 0x000007fefd18b840 KERNELBASE.dll       RaiseException
+0x000000007716dc00 0x000007fefd187d10 KERNELBASE.dll       SetErrorMode
+0x000000007716dc08 0x000007fefd181260 KERNELBASE.dll       GetLastError
+0x000000007716dc18 0x000007fefd18f5f0 KERNELBASE.dll       FlsAlloc
+0x000000007716dc20 0x000007fefd181280 KERNELBASE.dll       FlsGetValue
+0x000000007716dc28 0x000007fefd182720 KERNELBASE.dll       FlsSetValue
+0x000000007716dc30 0x000007fefd18f030 KERNELBASE.dll       FlsFree
+0x000000007716dc40 0x000007fefd1b1ef0 KERNELBASE.dll       Beep
+0x000000007716dc50 0x0000000077344a80 ntdll.dll            RtlQueryPerformanceCounter
+0x000000007716dc58 0x0000000077342670 ntdll.dll            RtlQueryPerformanceFrequency
+0x000000007716dc68 0x000007fefd18b4f0 KERNELBASE.dll       AllocateAndInitializeSid
+0x000000007716dc70 0x000007fefd187230 KERNELBASE.dll       AccessCheck
+0x000000007716dc78 0x000007fefd190930 KERNELBASE.dll       DuplicateToken
+0x000000007716dc80 0x000007fefd18b4e0 KERNELBASE.dll       FreeSid
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 impscan --pid=872              
+Volatility Foundation Volatility Framework 2.6.1
+IAT                Call               Module               Function
+------------------ ------------------ -------------------- --------
+0x000000013febc000 0x000007fefd273bd0 advapi32.DLL         RegGetValueW
+0x000000013febc008 0x000007fefd27e6f0 advapi32.DLL         RegQueryValueExW
+0x000000013febc010 0x000007fefd284210 advapi32.DLL         RegOpenKeyExW
+0x000000013febc018 0x000007fefd284240 advapi32.DLL         RegCloseKey
+0x000000013febc020 0x000007fefd2701b0 advapi32.DLL         CheckTokenMembership
+0x000000013febc028 0x000007fefd27da60 advapi32.DLL         FreeSid
+0x000000013febc030 0x000007fefd27d83c advapi32.DLL         AllocateAndInitializeSid
+0x000000013febc038 0x000007fefd26afd0 advapi32.DLL         RegDeleteValueW
+0x000000013febc040 0x000007fefd274490 advapi32.DLL         RegSetValueExW
+0x000000013febc048 0x000007fefd27e750 advapi32.DLL         RegEnumKeyExW
+0x000000013febc050 0x000007fefd27d5f0 advapi32.DLL         RegCreateKeyExW
+0x000000013febc058 0x000007fefd274160 advapi32.DLL         RegDeleteKeyW
+0x000000013febc060 0x000007fefd27e910 advapi32.DLL         RegQueryInfoKeyW
+0x000000013febc068 0x000007fefd284250 advapi32.DLL         IsTextUnicode
+0x000000013febc078 0x000007fefb9bfc00 COMCTL32.dll         ImageList_BeginDrag
+0x000000013febc080 0x000007fefb9bfd58 COMCTL32.dll         ImageList_DragMove
+0x000000013febc088 0x000007fefb9c0ffc COMCTL32.dll         ImageList_Remove
+0x000000013febc090 0x000007fefb9bfe14 COMCTL32.dll         ImageList_DragShowNolock
+0x000000013febc098 0x000007fefb9bfba8 COMCTL32.dll         ImageList_EndDrag
+0x000000013febc0a0 0x000007fefbad6804 COMCTL32.dll         InitCommonControls
+0x000000013febc0a8 0x000007fefb9c11f4 COMCTL32.dll         ImageList_SetIconSize
+0x000000013febc0b0 0x000007fefb9c0cbc COMCTL32.dll         ImageList_AddMasked
+0x000000013febc0b8 0x000007fefb987e50 COMCTL32.dll         InitCommonControlsEx
+0x000000013febc0c0 0x000007fefb9c0900 COMCTL32.dll         ImageList_Destroy
+0x000000013febc0c8 0x000007fefb9c0258 COMCTL32.dll         ImageList_Create
+0x000000013febc0d0 0x000007fefb9c0a78 COMCTL32.dll         ImageList_ReplaceIcon
+0x000000013febc0d8 0x000007fefb99b55c COMCTL32.dll         _TrackMouseEvent
+0x000000013febc0e0 0x000007fefb9c0e34 COMCTL32.dll         ImageList_Draw
+0x000000013febc0e8 0x000007fefb9c12dc COMCTL32.dll         ImageList_GetImageInfo
+0x000000013febc0f0 0x000007fefb986578 COMCTL32.dll         RemoveWindowSubclass
+0x000000013febc0f8 0x000007fefb9863d8 COMCTL32.dll         GetWindowSubclass
+0x000000013febc100 0x000007fefb986478 COMCTL32.dll         SetWindowSubclass
+0x000000013febc108 0x000007fefb9bfce0 COMCTL32.dll         ImageList_DragEnter
+0x000000013febc110 0x000007fefb98664c COMCTL32.dll         DefSubclassProc
+0x000000013febc120 0x000007fefd3a0c40 COMDLG32.dll         ChooseColorW
+0x000000013febc128 0x000007fefd381164 COMDLG32.dll         PrintDlgW
+0x000000013febc138 0x000007fefd01d140 CRYPT32.dll          CertGetCertificateContextProperty
+0x000000013febc140 0x000007fefd038b5c CRYPT32.dll          CertGetNameStringW
+0x000000013febc148 0x000007fefd01cc80 CRYPT32.dll          CertFindCertificateInStore
+0x000000013febc150 0x000007fefd02eae8 CRYPT32.dll          CryptMsgGetParam
+0x000000013febc158 0x000007fefd019290 CRYPT32.dll          CertCloseStore
+0x000000013febc160 0x000007fefd02f73c CRYPT32.dll          CryptQueryObject
+0x000000013febc168 0x000007fefd03b99c CRYPT32.dll          CertNameToStrW
+0x000000013febc170 0x000007fefd02e5cc CRYPT32.dll          CryptMsgClose
+0x000000013febc180 0x000007fefd5a2a10 GDI32.dll            GetDeviceCaps
+0x000000013febc188 0x000007fefd5a1c54 GDI32.dll            CreateCompatibleDC
+0x000000013febc190 0x000007fefd5a2c9c GDI32.dll            CreateCompatibleBitmap
+0x000000013febc198 0x000007fefd5a8324 GDI32.dll            GetPixel
+0x000000013febc1a0 0x000007fefd5a6d50 GDI32.dll            SaveDC
+0x000000013febc1a8 0x000007fefd5a24b0 GDI32.dll            BitBlt
+0x000000013febc1b0 0x000007fefd5ae370 GDI32.dll            Polyline
+0x000000013febc1b8 0x000007fefd5a22c4 GDI32.dll            DeleteDC
+0x000000013febc1c0 0x000007fefd5abc00 GDI32.dll            LineTo
+0x000000013febc1c8 0x000007fefd5a49ec GDI32.dll            MoveToEx
+0x000000013febc1d0 0x000007fefd5d6660 GDI32.dll            CreateHatchBrush
+0x000000013febc1d8 0x000007fefd5a7fc4 GDI32.dll            CreateFontW
+0x000000013febc1e0 0x000007fefd5a3620 GDI32.dll            GetTextMetricsW
+0x000000013febc1e8 0x000007fefd5abb64 GDI32.dll            Rectangle
+0x000000013febc1f0 0x000007fefd5ac2a0 GDI32.dll            SetROP2
+0x000000013febc1f8 0x000007fefd5a6e24 GDI32.dll            RestoreDC
+0x000000013febc200 0x000007fefd5a19b0 GDI32.dll            SelectObject
+0x000000013febc208 0x000007fefd5a3ccc GDI32.dll            SetWindowOrgEx
+0x000000013febc210 0x000007fefd5a1f28 GDI32.dll            CreateBitmap
+0x000000013febc218 0x000007fefd5a5390 GDI32.dll            CreatePatternBrush
+0x000000013febc220 0x000007fefd5a1710 GDI32.dll            PatBlt
+0x000000013febc228 0x000007fefd5a7970 GDI32.dll            SetBrushOrgEx
+0x000000013febc230 0x000007fefd5a6f84 GDI32.dll            SetDIBits
+0x000000013febc238 0x000007fefd5a3254 GDI32.dll            GetDIBits
+0x000000013febc240 0x000007fefd5aa854 GDI32.dll            EnumFontFamiliesExW
+0x000000013febc248 0x000007fefd5d8284 GDI32.dll            EndPage
+0x000000013febc250 0x000007fefd5a4bb0 GDI32.dll            DPtoLP
+0x000000013febc258 0x000007fefd5d88d8 GDI32.dll            StartDocW
+0x000000013febc260 0x000007fefd5a48dc GDI32.dll            SetTextAlign
+0x000000013febc268 0x000007fefd5d8444 GDI32.dll            EndDoc
+0x000000013febc270 0x000007fefd5d82a4 GDI32.dll            StartPage
+0x000000013febc278 0x000007fefd5a5f00 GDI32.dll            GetTextExtentPointW
+0x000000013febc280 0x000007fefd5aba60 GDI32.dll            StretchBlt
+0x000000013febc288 0x000007fefd5a4e70 GDI32.dll            CombineRgn
+0x000000013febc290 0x000007fefd5a2fd4 GDI32.dll            IntersectClipRect
+0x000000013febc298 0x000007fefd5d71b0 GDI32.dll            Ellipse
+0x000000013febc2a0 0x000007fefd5b4fac GDI32.dll            Polygon
+0x000000013febc2a8 0x000007fefd5ac5f0 GDI32.dll            ExtCreatePen
+0x000000013febc2b0 0x000007fefd5c5aa0 GDI32.dll            GetTextExtentExPointA
+0x000000013febc2b8 0x000007fefd5adadc GDI32.dll            GetTextExtentExPointW
+0x000000013febc2c0 0x000007fefd5c51d8 GDI32.dll            GetTextExtentPoint32A
+0x000000013febc2c8 0x000007fefd5a42d0 GDI32.dll            CreateDIBSection
+0x000000013febc2d0 0x000007fefd5ad734 GDI32.dll            ExtTextOutA
+0x000000013febc2d8 0x000007fefd5a3054 GDI32.dll            GetClipRgn
+0x000000013febc2e0 0x000007fefd5a103c GDI32.dll            GetStockObject
+0x000000013febc2e8 0x000007fefd5b4d44 GDI32.dll            GetROP2
+0x000000013febc2f0 0x000007fefd5a2840 GDI32.dll            CreateRectRgn
+0x000000013febc2f8 0x000007fefd5a5750 GDI32.dll            GetTextExtentPoint32W
+0x000000013febc300 0x000007fefd5a1d98 GDI32.dll            SetTextColor
+0x000000013febc308 0x000007fefd5a1e80 GDI32.dll            SetBkMode
+0x000000013febc310 0x000007fefd5ab704 GDI32.dll            CreatePen
+0x000000013febc318 0x000007fefd5a2eb0 GDI32.dll            SelectClipRgn
+0x000000013febc320 0x000007fefd5a2674 GDI32.dll            GetObjectW
+0x000000013febc328 0x000007fefd5a5004 GDI32.dll            ExcludeClipRect
+0x000000013febc330 0x000007fefd5a1cdc GDI32.dll            SetBkColor
+0x000000013febc338 0x000007fefd5a10a0 GDI32.dll            DeleteObject
+0x000000013febc340 0x000007fefd5a1f80 GDI32.dll            CreateSolidBrush
+0x000000013febc348 0x000007fefd5a5244 GDI32.dll            CreateFontIndirectW
+0x000000013febc350 0x000007fefd5d7464 GDI32.dll            RoundRect
+0x000000013febc358 0x000007fefd5a5c3c GDI32.dll            CreateRectRgnIndirect
+0x000000013febc360 0x000007fefd5a2bb0 GDI32.dll            OffsetWindowOrgEx
+0x000000013febc368 0x000007fefd5a3e70 GDI32.dll            ExtTextOutW
+0x000000013febc378 0x000007fefd348d70 IMM32.dll            ImmSetCompositionStringW
+0x000000013febc380 0x000007fefd34dc38 IMM32.dll            ImmEscapeW
+0x000000013febc388 0x000007fefd348c60 IMM32.dll            ImmGetCompositionStringW
+0x000000013febc390 0x000007fefd343d14 IMM32.dll            ImmSetCompositionWindow
+0x000000013febc398 0x000007fefd343e80 IMM32.dll            ImmSetCompositionFontW
+0x000000013febc3a0 0x000007fefd341a30 IMM32.dll            ImmReleaseContext
+0x000000013febc3a8 0x000007fefd341a0c IMM32.dll            ImmGetContext
+0x000000013febc3b0 0x000007fefd343f94 IMM32.dll            ImmNotifyIME
+0x000000013febc3b8 0x000007fefd34acfc IMM32.dll            ImmSetCandidateWindow
+0x000000013febc3c8 0x00000000770f1ad0 kernel32.dll         WriteFile
+0x000000013febc3d0 0x000000007715d290 kernel32.dll         GetTimeFormatEx
+0x000000013febc3d8 0x00000000770e08b0 kernel32.dll         CreateFileW
+0x000000013febc3e0 0x0000000077160630 kernel32.dll         GetDateFormatEx
+0x000000013febc3e8 0x00000000770e2880 kernel32.dll         FormatMessageW
+0x000000013febc3f0 0x00000000770d75f0 kernel32.dll         GlobalAlloc
+0x000000013febc3f8 0x00000000770f14b0 kernel32.dll         CloseHandle
+0x000000013febc400 0x00000000770dac90 kernel32.dll         GetLocalTime
+0x000000013febc408 0x00000000770eb470 kernel32.dll         GetCurrentDirectoryW
+0x000000013febc410 0x00000000770da200 kernel32.dll         SetFilePointerEx
+0x000000013febc418 0x00000000770ef3d0 kernel32.dll         LCMapStringW
+0x000000013febc420 0x00000000770d5f20 kernel32.dll         FlushFileBuffers
+0x000000013febc428 0x000000007711c3e0 kernel32.dll         FormatMessageA
+0x000000013febc430 0x00000000770e61f0 kernel32.dll         ExpandEnvironmentStringsW
+0x000000013febc438 0x00000000770eb9a0 kernel32.dll         SetCurrentDirectoryW
+0x000000013febc440 0x00000000770e8930 kernel32.dll         SizeofResource
+0x000000013febc448 0x00000000770d7be0 kernel32.dll         LockResource
+0x000000013febc450 0x00000000770e8910 kernel32.dll         LoadResource
+0x000000013febc458 0x00000000770e8ba0 kernel32.dll         FindResourceW
+0x000000013febc460 0x00000000770e5660 kernel32.dll         FreeLibrary
+0x000000013febc468 0x00000000770f1050 kernel32.dll         WaitForSingleObject
+0x000000013febc470 0x00000000770e42d0 kernel32.dll         CreateEventW
+0x000000013febc478 0x00000000770e2f40 kernel32.dll         SetEvent
+0x000000013febc480 0x00000000770e55c0 kernel32.dll         CreateThread
+0x000000013febc488 0x00000000770dc9f0 kernel32.dll         ResetEvent
+0x000000013febc490 0x00000000770d8790 kernel32.dll         CopyFileW
+0x000000013febc498 0x00000000770e4d30 kernel32.dll         GetCurrentProcess
+0x000000013febc4a0 0x00000000770e4a90 kernel32.dll         GetCurrentProcessId
+0x000000013febc4a8 0x00000000770e0400 kernel32.dll         CreateMutexW
+0x000000013febc4b0 0x00000000770f10c0 kernel32.dll         ReleaseMutex
+0x000000013febc4b8 0x00000000770f10a0 kernel32.dll         Sleep
+0x000000013febc4c0 0x000000007711e540 kernel32.dll         GlobalSize
+0x000000013febc4c8 0x000000007711bc40 kernel32.dll         lstrcpynW
+0x000000013febc4d0 0x00000000770d3860 kernel32.dll         lstrcmpiA
+0x000000013febc4d8 0x00000000770e01b0 kernel32.dll         WaitForMultipleObjects
+0x000000013febc4e0 0x00000000770e1410 kernel32.dll         CopyFileExW
+0x000000013febc4e8 0x00000000770dc960 kernel32.dll         GetVersionExW
+0x000000013febc4f0 0x00000000770e5fb0 kernel32.dll         GetSystemInfo
+0x000000013febc4f8 0x00000000770f1ab0 kernel32.dll         UnmapViewOfFile
+0x000000013febc500 0x00000000770dea30 kernel32.dll         CreateFileMappingW
+0x000000013febc508 0x00000000770dd3e0 kernel32.dll         MapViewOfFile
+0x000000013febc510 0x00000000770eb0f0 kernel32.dll         GetLongPathNameW
+0x000000013febc518 0x00000000770f1320 kernel32.dll         SetLastError
+0x000000013febc520 0x0000000077132060 kernel32.dll         GetTempPathW
+0x000000013febc528 0x0000000077120140 kernel32.dll         CancelIo
+0x000000013febc530 0x00000000770f1520 kernel32.dll         WaitForSingleObjectEx
+0x000000013febc538 0x00000000770dbe60 kernel32.dll         QueueUserAPC
+0x000000013febc540 0x00000000770f10e0 kernel32.dll         SleepEx
+0x000000013febc548 0x00000000770d28b0 kernel32.dll         ReadDirectoryChangesW
+0x000000013febc550 0x00000000770df250 kernel32.dll         GetLocaleInfoA
+0x000000013febc558 0x00000000770f1030 kernel32.dll         GetTickCount
+0x000000013febc560 0x00000000770d7a80 kernel32.dll         GetStringTypeExW
+0x000000013febc568 0x000000007711c090 kernel32.dll         LCMapStringA
+0x000000013febc570 0x000000007711c1e0 kernel32.dll         GetStringTypeExA
+0x000000013febc578 0x00000000770e67e0 kernel32.dll         GetUserDefaultLCID
+0x000000013febc580 0x00000000770e60b0 kernel32.dll         LoadLibraryA
+0x000000013febc588 0x00000000770d7750 kernel32.dll         IsDebuggerPresent
+0x000000013febc590 0x000000007711be30 kernel32.dll         TerminateProcess
+0x000000013febc598 0x00000000770e8bc0 kernel32.dll         SetUnhandledExceptionFilter
+0x000000013febc5a0 0x000000007716b850 kernel32.dll         UnhandledExceptionFilter
+0x000000013febc5a8 0x000000007711b740 kernel32.dll         RtlVirtualUnwind
+0x000000013febc5b0 0x000000007711b7a0 kernel32.dll         RtlLookupFunctionEntry
+0x000000013febc5b8 0x000000007711b880 kernel32.dll         RtlCaptureContext
+0x000000013febc5c0 0x00000000770e5520 kernel32.dll         InitializeCriticalSectionAndSpinCount
+0x000000013febc5c8 0x00000000770e5d20 kernel32.dll         GetCPInfo
+0x000000013febc5d0 0x000000007711bb10 kernel32.dll         CompareStringEx
+0x000000013febc5d8 0x000000007711b8a0 kernel32.dll         LCMapStringEx
+0x000000013febc5e0 0x00000000770d3410 kernel32.dll         GetLocaleInfoEx
+0x000000013febc5e8 0x000000007733bc90 ntdll.dll            RtlDecodePointer
+0x000000013febc5f0 0x00000000773412a0 ntdll.dll            RtlEncodePointer
+0x000000013febc5f8 0x000000007711e8a0 kernel32.dll         GlobalLock
+0x000000013febc600 0x00000000770e2f80 kernel32.dll         GetSystemTimeAsFileTime
+0x000000013febc608 0x000000007711b370 kernel32.dll         SleepConditionVariableSRW
+0x000000013febc610 0x000000007711b3c0 kernel32.dll         SleepConditionVariableCS
+0x000000013febc618 0x00000000773426b0 ntdll.dll            RtlWakeAllConditionVariable
+0x000000013febc620 0x00000000773a6080 ntdll.dll            RtlWakeConditionVariable
+0x000000013febc628 0x0000000077340430 ntdll.dll            RtlRunOnceInitialize
+0x000000013febc630 0x00000000770daa80 kernel32.dll         GetModuleHandleExW
+0x000000013febc638 0x00000000772fd840 ntdll.dll            TpReleaseWork
+0x000000013febc640 0x00000000772fca20 ntdll.dll            TpPostWork
+0x000000013febc648 0x00000000770d5b80 kernel32.dll         CreateThreadpoolWork
+0x000000013febc650 0x00000000773b9a20 ntdll.dll            TpCallbackUnloadDllOnCompletion
+0x000000013febc658 0x000000007711ce00 kernel32.dll         IsProcessorFeaturePresent
+0x000000013febc660 0x00000000770daae0 kernel32.dll         GetNativeSystemInfo
+0x000000013febc668 0x00000000770dbf60 kernel32.dll         RaiseException
+0x000000013febc670 0x0000000077100f00 kernel32.dll         RtlPcToFileHeader
+0x000000013febc678 0x00000000770ddc80 kernel32.dll         QueryPerformanceFrequency
+0x000000013febc680 0x00000000770e5540 kernel32.dll         QueryPerformanceCounter
+0x000000013febc688 0x000000007711b330 kernel32.dll         InitOnceBeginInitialize
+0x000000013febc690 0x000000007711b300 kernel32.dll         InitOnceComplete
+0x000000013febc698 0x00000000770e80b0 kernel32.dll         GetStringTypeW
+0x000000013febc6a0 0x000000007731d370 kernel32.dll         DeleteCriticalSection
+0x000000013febc6a8 0x0000000077301200 ntdll.dll            RtlTryEnterCriticalSection
+0x000000013febc6b0 0x00000000770e69f0 kernel32.dll         InitializeCriticalSectionEx
+0x000000013febc6b8 0x000000007730c0b0 kernel32.dll         LeaveCriticalSection
+0x000000013febc6c0 0x000000007731d190 kernel32.dll         EnterCriticalSection
+0x000000013febc6c8 0x000000007730b920 ntdll.dll            RtlAcquireSRWLockExclusive
+0x000000013febc6d0 0x000000007730b8e0 ntdll.dll            RtlReleaseSRWLockExclusive
+0x000000013febc6d8 0x0000000077340430 ntdll.dll            RtlRunOnceInitialize
+0x000000013febc6e0 0x00000000770e6720 kernel32.dll         GetFullPathNameW
+0x000000013febc6e8 0x00000000770eac10 kernel32.dll         CompareFileTime
+0x000000013febc6f0 0x00000000770da070 kernel32.dll         CreateDirectoryW
+0x000000013febc6f8 0x00000000770ec8b0 kernel32.dll         lstrcmpW
+0x000000013febc700 0x00000000770eacc0 kernel32.dll         GetFileAttributesW
+0x000000013febc708 0x00000000770eac50 kernel32.dll         FindClose
+0x000000013febc710 0x00000000770e2f00 kernel32.dll         lstrlenW
+0x000000013febc718 0x00000000770e0950 kernel32.dll         FindNextFileW
+0x000000013febc720 0x00000000770eac70 kernel32.dll         FindFirstFileW
+0x000000013febc728 0x00000000770f1b20 kernel32.dll         WideCharToMultiByte
+0x000000013febc730 0x00000000770e4b90 kernel32.dll         MultiByteToWideChar
+0x000000013febc738 0x00000000770d7670 kernel32.dll         GlobalFree
+0x000000013febc740 0x00000000770df210 kernel32.dll         GetVersion
+0x000000013febc748 0x00000000770e5fd0 kernel32.dll         GetACP
+0x000000013febc750 0x00000000770e6740 kernel32.dll         GetModuleFileNameW
+0x000000013febc758 0x00000000770d8e90 kernel32.dll         MulDiv
+0x000000013febc760 0x00000000770e2f20 kernel32.dll         GetCurrentThreadId
+0x000000013febc768 0x00000000770e37e0 kernel32.dll         LocalFree
+0x000000013febc770 0x00000000770dae80 kernel32.dll         GetDateFormatW
+0x000000013febc778 0x00000000770f1300 kernel32.dll         GetLastError
+0x000000013febc780 0x00000000770e3800 kernel32.dll         LocalAlloc
+0x000000013febc788 0x00000000770e5680 kernel32.dll         LoadLibraryExW
+0x000000013febc790 0x00000000770e0970 kernel32.dll         lstrcmpiW
+0x000000013febc798 0x00000000770f1c60 kernel32.dll         GetModuleHandleW
+0x000000013febc7a0 0x00000000770f1bc0 kernel32.dll         GetProcAddress
+0x000000013febc7a8 0x00000000770d2820 kernel32.dll         VirtualProtect
+0x000000013febc7b0 0x00000000770e70c0 kernel32.dll         GetStartupInfoW
+0x000000013febc7b8 0x000000007733f830 ntdll.dll            RtlInitializeSListHead
+0x000000013febc7c0 0x000000007711e6b0 kernel32.dll         GlobalUnlock
+0x000000013febc7c8 0x000000007711be40 kernel32.dll         SystemTimeToTzSpecificLocalTime
+0x000000013febc7d0 0x000000007711e1f0 kernel32.dll         lstrcpyW
+0x000000013febc7d8 0x00000000770d2990 kernel32.dll         MoveFileExW
+0x000000013febc7e0 0x00000000770db880 kernel32.dll         GetTimeFormatW
+0x000000013febc7e8 0x00000000770da090 kernel32.dll         DeleteFileW
+0x000000013febc7f0 0x00000000770da220 kernel32.dll         FileTimeToSystemTime
+0x000000013febc7f8 0x00000000770daaa0 kernel32.dll         GetFileAttributesExW
+0x000000013febc800 0x00000000770e27e0 kernel32.dll         SetFileAttributesW
+0x000000013febc808 0x0000000077100f10 kernel32.dll         RtlUnwindEx
+0x000000013febc810 0x00000000770e6140 kernel32.dll         TlsAlloc
+0x000000013febc818 0x00000000770f1100 kernel32.dll         TlsGetValue
+0x000000013febc820 0x00000000770e4d10 kernel32.dll         TlsSetValue
+0x000000013febc828 0x00000000770e05d0 kernel32.dll         TlsFree
+0x000000013febc830 0x00000000770e0540 kernel32.dll         ReadFile
+0x000000013febc838 0x000000007732c120 ntdll.dll            RtlExitUserProcess
+0x000000013febc840 0x0000000077333ea0 ntdll.dll            RtlExitUserThread
+0x000000013febc848 0x00000000770d4d20 kernel32.dll         FreeLibraryAndExitThread
+0x000000013febc850 0x00000000770ec640 kernel32.dll         GetStdHandle
+0x000000013febc858 0x0000000077317a30 kernel32.dll         HeapAlloc
+0x000000013febc860 0x00000000770f15a0 kernel32.dll         HeapFree
+0x000000013febc868 0x00000000770f1330 kernel32.dll         GetFileType
+0x000000013febc870 0x00000000770f1390 kernel32.dll         GetConsoleMode
+0x000000013febc878 0x000000007713a610 kernel32.dll         ReadConsoleW
+0x000000013febc880 0x00000000770e4a50 kernel32.dll         CompareStringW
+0x000000013febc888 0x00000000770e8480 kernel32.dll         GetLocaleInfoW
+0x000000013febc890 0x00000000770e8100 kernel32.dll         IsValidLocale
+0x000000013febc898 0x000000007711c570 kernel32.dll         EnumSystemLocalesW
+0x000000013febc8a0 0x00000000770d2cf0 kernel32.dll         GetTimeZoneInformation
+0x000000013febc8a8 0x00000000770d8f00 kernel32.dll         GetFileSizeEx
+0x000000013febc8b0 0x00000000770e87d0 kernel32.dll         GetConsoleOutputCP
+0x000000013febc8b8 0x00000000770e80d0 kernel32.dll         IsValidCodePage
+0x000000013febc8c0 0x00000000770ea470 kernel32.dll         GetOEMCP
+0x000000013febc8c8 0x000000007711b830 kernel32.dll         RtlUnwind
+0x000000013febc8d0 0x00000000773100b0 kernel32.dll         HeapReAlloc
+0x000000013febc8d8 0x00000000770eb3d0 kernel32.dll         FindFirstFileExW
+0x000000013febc8e0 0x00000000770f0440 kernel32.dll         GetCommandLineA
+0x000000013febc8e8 0x00000000770eb370 kernel32.dll         GetCommandLineW
+0x000000013febc8f0 0x00000000770e5d40 kernel32.dll         GetEnvironmentStringsW
+0x000000013febc8f8 0x00000000770e5d60 kernel32.dll         FreeEnvironmentStringsW
+0x000000013febc900 0x00000000770e5f20 kernel32.dll         SetEnvironmentVariableW
+0x000000013febc908 0x00000000770f1580 kernel32.dll         GetProcessHeap
+0x000000013febc910 0x000000007711be70 kernel32.dll         SetStdHandle
+0x000000013febc918 0x000000007732d4c0 kernel32.dll         HeapSize
+0x000000013febc920 0x000000007711bf00 kernel32.dll         SetEndOfFile
+0x000000013febc928 0x00000000770e2d80 kernel32.dll         WriteConsoleW
+0x000000013febc938 0x000007fef37c1180 MSIMG32.dll          AlphaBlend
+0x000000013febc948 0x000007fefda51040 OLEAUT32.dll         SysAllocStringLen
+0x000000013febc950 0x000007fefda511b0 OLEAUT32.dll         SysFreeString
+0x000000013febc960 0x000007fefe6a8f4c SHELL32.dll          SHFileOperationW
+0x000000013febc968 0x000007fefe6a87a4 SHELL32.dll          SHCreateItemFromParsingName
+0x000000013febc970 0x000007fefe871ee4 SHELL32.dll          DragQueryPoint
+0x000000013febc978 0x000007fefe872268 SHELL32.dll          DragFinish
+0x000000013febc980 0x000007fefe669810 SHELL32.dll          ShellExecuteW
+0x000000013febc988 0x000007fefe745d80 SHELL32.dll          SHCreateDirectory
+0x000000013febc990 0x000007fefe6d3bd4 SHELL32.dll          SHGetFolderPathW
+0x000000013febc998 0x000007fefe872224 SHELL32.dll          DragQueryFileW
+0x000000013febc9a0 0x000007fefe66dc90 SHELL32.dll          Shell_NotifyIconW
+0x000000013febc9b0 0x000007fefdb3189c SHLWAPI.dll          AssocQueryStringW
+0x000000013febc9b8 0x000007fefdb4daf4 SHLWAPI.dll          ColorRGBToHLS
+0x000000013febc9c0 0x000007fefdb4a764 SHLWAPI.dll          PathStripPathW
+0x000000013febc9c8 0x000007fefdb40850 SHLWAPI.dll          PathAppendW
+0x000000013febc9d0 0x000007fefdb5e630 SHLWAPI.dll          PathAddExtensionW
+0x000000013febc9d8 0x000007fefdb392d8 SHLWAPI.dll          PathRemoveExtensionW
+0x000000013febc9e0 0x000007fefdb385dc SHLWAPI.dll          PathIsDirectoryW
+0x000000013febc9e8 0x000007fefdb43dfc SHLWAPI.dll          PathCombineW
+0x000000013febc9f0 0x000007fefdb43dbc SHLWAPI.dll          PathIsRelativeW
+0x000000013febc9f8 0x000007fefdb43920 SHLWAPI.dll          PathFindFileNameW
+0x000000013febca00 0x000007fefdb46650 SHLWAPI.dll          PathCompactPathExW
+0x000000013febca08 0x000007fefdb43d60 SHLWAPI.dll          PathGetDriveNumberW
+0x000000013febca10 0x000007fefdb41b64 SHLWAPI.dll          PathMatchSpecW
+0x000000013febca18 0x000007fefdb42b00 SHLWAPI.dll          PathFindExtensionW
+0x000000013febca20 0x000007fefdb3c984 SHLWAPI.dll          PathFileExistsW
+0x000000013febca28 0x000007fefdb3a43c SHLWAPI.dll          PathRemoveFileSpecW
+0x000000013febca30 0x000007fefdb4dbe0 SHLWAPI.dll          ColorHLSToRGB
+0x000000013febca40 0x000007fef1b61cb0 SensApi.dll          IsDestinationReachableW
+0x000000013febca48 0x000007fef1b61010 SensApi.dll          IsNetworkAlive
+0x000000013febca58 0x00000000771f88b0 USER32.dll           InsertMenuItemW
+0x000000013febca60 0x00000000771fcb78 USER32.dll           EndDeferWindowPos
+0x000000013febca68 0x00000000771fcb54 USER32.dll           BeginDeferWindowPos
+0x000000013febca70 0x00000000771fcb80 USER32.dll           DeferWindowPos
+0x000000013febca78 0x0000000077209030 USER32.dll           KillTimer
+0x000000013febca80 0x0000000077202a60 USER32.dll           GetCaretBlinkTime
+0x000000013febca88 0x000000007726dd1c USER32.dll           AppendMenuA
+0x000000013febca90 0x000000007721556c USER32.dll           GetMessageTime
+0x000000013febca98 0x00000000772064c0 USER32.dll           GetKeyboardLayout
+0x000000013febcaa0 0x000000007720f3b0 USER32.dll           ValidateRect
+0x000000013febcaa8 0x00000000772067e0 USER32.dll           SetTimer
+0x000000013febcab0 0x0000000077206170 USER32.dll           MsgWaitForMultipleObjects
+0x000000013febcab8 0x000000007720b980 USER32.dll           NotifyWinEvent
+0x000000013febcac0 0x0000000077213644 USER32.dll           GetUpdateRgn
+0x000000013febcac8 0x00000000771f8074 USER32.dll           SystemParametersInfoA
+0x000000013febcad0 0x00000000771fd200 USER32.dll           GetDoubleClickTime
+0x000000013febcad8 0x0000000077241f3c USER32.dll           DrawTextA
+0x000000013febcae0 0x00000000771f9954 USER32.dll           CopyImage
+0x000000013febcae8 0x00000000771fa984 USER32.dll           MonitorFromPoint
+0x000000013febcaf0 0x0000000077207bcc USER32.dll           AdjustWindowRectEx
+0x000000013febcaf8 0x00000000771ff80c USER32.dll           LoadStringW
+0x000000013febcb00 0x0000000077232ef4 USER32.dll           LoadStringA
+0x000000013febcb08 0x00000000772187b0 USER32.dll           GetLastActivePopup
+0x000000013febcb10 0x0000000077204d80 USER32.dll           GetIconInfo
+0x000000013febcb18 0x00000000771fccd4 USER32.dll           CreateIconIndirect
+0x000000013febcb20 0x0000000077201370 USER32.dll           LoadIconW
+0x000000013febcb28 0x0000000077218a20 USER32.dll           WindowFromPoint
+0x000000013febcb30 0x0000000077212a90 USER32.dll           LockWindowUpdate
+0x000000013febcb38 0x0000000077213704 USER32.dll           mouse_event
+0x000000013febcb40 0x0000000077200d00 USER32.dll           GetDesktopWindow
+0x000000013febcb48 0x0000000077205550 USER32.dll           GetDCEx
+0x000000013febcb50 0x000000007726d11c USER32.dll           GetDlgItemTextA
+0x000000013febcb58 0x0000000077207c2c USER32.dll           SetScrollInfo
+0x000000013febcb60 0x00000000772053b0 USER32.dll           GetScrollInfo
+0x000000013febcb68 0x00000000771fbeac USER32.dll           GetWindowTextLengthW
+0x000000013febcb70 0x0000000077209d54 USER32.dll           GetMessageW
+0x000000013febcb78 0x00000000771fd2b0 USER32.dll           UnregisterClassW
+0x000000013febcb80 0x0000000077200d4c USER32.dll           RegisterClassExW
+0x000000013febcb88 0x0000000077209820 USER32.dll           DispatchMessageW
+0x000000013febcb90 0x00000000771fccb0 USER32.dll           DestroyIcon
+0x000000013febcb98 0x00000000772616b0 USER32.dll           MessageBoxA
+0x000000013febcba0 0x0000000077209600 USER32.dll           TranslateMessage
+0x000000013febcba8 0x000000007721acf0 USER32.dll           FlashWindowEx
+0x000000013febcbb0 0x00000000771f73f0 USER32.dll           PostQuitMessage
+0x000000013febcbb8 0x0000000077200c90 USER32.dll           GetSysColorBrush
+0x000000013febcbc0 0x0000000077212ad4 USER32.dll           BringWindowToTop
+0x000000013febcbc8 0x0000000077218860 USER32.dll           SetCapture
+0x000000013febcbd0 0x00000000771fcc64 USER32.dll           ReleaseCapture
+0x000000013febcbd8 0x0000000077212860 USER32.dll           GetActiveWindow
+0x000000013febcbe0 0x0000000077204790 USER32.dll           RedrawWindow
+0x000000013febcbe8 0x0000000077206450 USER32.dll           IsChild
+0x000000013febcbf0 0x00000000771f8420 USER32.dll           SetParent
+0x000000013febcbf8 0x0000000077218b78 USER32.dll           FindWindowExW
+0x000000013febcc00 0x00000000771fb8b4 USER32.dll           CallNextHookEx
+0x000000013febcc08 0x00000000771fd210 USER32.dll           UnhookWindowsHookEx
+0x000000013febcc10 0x00000000771ff6e4 USER32.dll           SetWindowsHookExW
+0x000000013febcc18 0x0000000077218720 USER32.dll           GetMenuState
+0x000000013febcc20 0x00000000771f8ab0 USER32.dll           GetMenuItemCount
+0x000000013febcc28 0x00000000771f8920 USER32.dll           CreatePopupMenu
+0x000000013febcc30 0x0000000077203614 USER32.dll           SetMenuItemInfoW
+0x000000013febcc38 0x00000000771f9160 USER32.dll           DestroyMenu
+0x000000013febcc40 0x00000000771f8930 USER32.dll           InsertMenuW
+0x000000013febcc48 0x000000007720ff80 USER32.dll           CheckMenuItem
+0x000000013febcc50 0x00000000772156e0 USER32.dll           EnableMenuItem
+0x000000013febcc58 0x000000007721529c USER32.dll           CreateMenu
+0x000000013febcc60 0x0000000077207810 USER32.dll           IsWindow
+0x000000013febcc68 0x000000007720e260 USER32.dll           EmptyClipboard
+0x000000013febcc70 0x000000007720e2dc USER32.dll           SetClipboardData
+0x000000013febcc78 0x00000000772051e0 USER32.dll           GetDlgCtrlID
+0x000000013febcc80 0x000000007720ca50 USER32.dll           GetDlgItemInt
+0x000000013febcc88 0x000000007720d818 USER32.dll           SetDlgItemInt
+0x000000013febcc90 0x0000000077217398 USER32.dll           CreateDialogParamW
+0x000000013febcc98 0x0000000077208c38 USER32.dll           IsWindowVisible
+0x000000013febcca0 0x00000000772017e0 USER32.dll           ShowWindow
+0x000000013febcca8 0x0000000077203188 USER32.dll           ClientToScreen
+0x000000013febccb0 0x00000000771ff1f0 USER32.dll           RegisterWindowMessageW
+0x000000013febccb8 0x000000007720f610 USER32.dll           SetClipboardViewer
+0x000000013febccc0 0x000000007726170c USER32.dll           MessageBoxW
+0x000000013febccc8 0x00000000772158e4 USER32.dll           OpenClipboard
+0x000000013febccd0 0x0000000077212600 USER32.dll           ChangeClipboardChain
+0x000000013febccd8 0x00000000772158d0 USER32.dll           CloseClipboard
+0x000000013febcce0 0x000000007720e6f4 USER32.dll           GetClipboardData
+0x000000013febcce8 0x0000000077215980 USER32.dll           IsClipboardFormatAvailable
+0x000000013febccf0 0x0000000077201740 USER32.dll           LoadMenuW
+0x000000013febccf8 0x00000000772075b4 USER32.dll           PostMessageW
+0x000000013febcd00 0x00000000772189bc USER32.dll           GetMenu
+0x000000013febcd08 0x00000000771fc9d0 USER32.dll           DestroyWindow
+0x000000013febcd10 0x0000000077206980 USER32.dll           GetDC
+0x000000013febcd18 0x00000000771fb150 USER32.dll           HideCaret
+0x000000013febcd20 0x0000000077200690 USER32.dll           CreateWindowExW
+0x000000013febcd28 0x000000007720e570 USER32.dll           MessageBeep
+0x000000013febcd30 0x000000007720e428 USER32.dll           GetScrollPos
+0x000000013febcd38 0x0000000077206e94 USER32.dll           RemovePropW
+0x000000013febcd40 0x0000000077218870 USER32.dll           GetKeyboardState
+0x000000013febcd48 0x0000000077217cfc USER32.dll           SetCaretPos
+0x000000013febcd50 0x000000007726ad68 USER32.dll           GetScrollRange
+0x000000013febcd58 0x0000000077217d10 USER32.dll           CreateCaret
+0x000000013febcd60 0x0000000077200738 USER32.dll           RegisterClassW
+0x000000013febcd68 0x00000000771f8040 USER32.dll           SetWindowPlacement
+0x000000013febcd70 0x0000000077208c00 USER32.dll           DrawTextExW
+0x000000013febcd78 0x0000000077201344 USER32.dll           LoadCursorW
+0x000000013febcd80 0x00000000772180c8 USER32.dll           DestroyCaret
+0x000000013febcd88 0x00000000771fc700 USER32.dll           SetCursor
+0x000000013febcd90 0x00000000771fb0b0 USER32.dll           SetScrollRange
+0x000000013febcd98 0x000000007720c860 USER32.dll           TrackPopupMenu
+0x000000013febcda0 0x000000007726b868 USER32.dll           GetClassNameA
+0x000000013febcda8 0x000000007726d190 USER32.dll           GetWindowTextA
+0x000000013febcdb0 0x0000000077206570 USER32.dll           IsDialogMessageW
+0x000000013febcdb8 0x00000000772114c8 USER32.dll           SetMenu
+0x000000013febcdc0 0x000000007720dab4 USER32.dll           CheckMenuRadioItem
+0x000000013febcdc8 0x0000000077230e88 USER32.dll           ScrollWindow
+0x000000013febcdd0 0x00000000771fccb0 USER32.dll           DestroyIcon
+0x000000013febcdd8 0x0000000077210b20 USER32.dll           CreateCursor
+0x000000013febcde0 0x00000000771ff1f0 USER32.dll           RegisterWindowMessageW
+0x000000013febcde8 0x00000000772035c4 USER32.dll           AppendMenuW
+0x000000013febcdf0 0x00000000771fb968 USER32.dll           GetCapture
+0x000000013febcdf8 0x0000000077205db8 USER32.dll           MonitorFromWindow
+0x000000013febce00 0x00000000771f8530 USER32.dll           DeleteMenu
+0x000000013febce08 0x0000000077260a98 USER32.dll           SetMenuItemBitmaps
+0x000000013febce10 0x00000000771f6f10 USER32.dll           LoadBitmapW
+0x000000013febce18 0x0000000077207e90 USER32.dll           SetRectEmpty
+0x000000013febce20 0x00000000772029d0 USER32.dll           MonitorFromRect
+0x000000013febce28 0x000000007720ccf0 USER32.dll           CreateDialogIndirectParamW
+0x000000013febce30 0x00000000771f5cd0 USER32.dll           ShowCursor
+0x000000013febce38 0x00000000771fb090 USER32.dll           CreateAcceleratorTableW
+0x000000013febce40 0x00000000771fd044 USER32.dll           FindWindowW
+0x000000013febce48 0x000000007726bfe8 USER32.dll           IsCharLowerW
+0x000000013febce50 0x000000007720b5e4 USER32.dll           CharUpperW
+0x000000013febce58 0x00000000771fd3c0 USER32.dll           CharLowerW
+0x000000013febce60 0x00000000771fb2c0 USER32.dll           IsCharAlphaNumericW
+0x000000013febce68 0x0000000077213d84 USER32.dll           IsCharAlphaW
+0x000000013febce70 0x000000007720f270 USER32.dll           ChildWindowFromPointEx
+0x000000013febce78 0x00000000772059e8 USER32.dll           GetMonitorInfoW
+0x000000013febce80 0x0000000077217fc0 USER32.dll           DestroyAcceleratorTable
+0x000000013febce88 0x0000000077215cd4 USER32.dll           GetMenuStringW
+0x000000013febce90 0x00000000771fb160 USER32.dll           ShowCaret
+0x000000013febce98 0x0000000077212b1c USER32.dll           SetScrollPos
+0x000000013febcea0 0x0000000077205564 USER32.dll           DrawEdge
+0x000000013febcea8 0x00000000772088f0 USER32.dll           GetParent
+0x000000013febceb0 0x0000000077202668 USER32.dll           UpdateWindow
+0x000000013febceb8 0x00000000772703c4 USER32.dll           DrawFrameControl
+0x000000013febcec0 0x0000000077230d08 USER32.dll           ToAscii
+0x000000013febcec8 0x00000000771fa8f0 USER32.dll           MoveWindow
+0x000000013febced0 0x0000000077204ea0 USER32.dll           GetKeyState
+0x000000013febced8 0x0000000077214f3c USER32.dll           EndDialog
+0x000000013febcee0 0x000000007720dc40 USER32.dll           SendDlgItemMessageW
+0x000000013febcee8 0x0000000077214df4 USER32.dll           DialogBoxIndirectParamW
+0x000000013febcef0 0x00000000771fd000 USER32.dll           SetFocus
+0x000000013febcef8 0x0000000077204fbc USER32.dll           DrawIconEx
+0x000000013febcf00 0x000000007720d2b8 USER32.dll           DialogBoxParamW
+0x000000013febcf08 0x0000000077203160 USER32.dll           LoadImageW
+0x000000013febcf10 0x00000000771fa8c0 USER32.dll           EnableWindow
+0x000000013febcf18 0x0000000077207e00 USER32.dll           GetWindowLongW
+0x000000013febcf20 0x00000000771f8ad8 USER32.dll           GetMenuItemInfoW
+0x000000013febcf28 0x0000000077346808 ntdll.dll            NtdllDefWindowProc_W
+0x000000013febcf30 0x0000000077206ac4 USER32.dll           GetWindowRect
+0x000000013febcf38 0x0000000077206424 USER32.dll           GetFocus
+0x000000013febcf40 0x00000000772089dc USER32.dll           InflateRect
+0x000000013febcf48 0x0000000077203b20 USER32.dll           SetWindowPos
+0x000000013febcf50 0x0000000077204b80 USER32.dll           EnumChildWindows
+0x000000013febcf58 0x0000000077206d4c USER32.dll           FillRect
+0x000000013febcf60 0x00000000771fc834 USER32.dll           ScreenToClient
+0x000000013febcf68 0x0000000077209400 USER32.dll           GetSystemMetrics
+0x000000013febcf70 0x00000000772183f0 USER32.dll           GetMenuBarInfo
+0x000000013febcf78 0x0000000077209ce8 USER32.dll           OffsetRect
+0x000000013febcf80 0x0000000077206ba0 USER32.dll           MapWindowPoints
+0x000000013febcf88 0x00000000772054c0 USER32.dll           TrackMouseEvent
+0x000000013febcf90 0x000000007720e548 USER32.dll           FrameRect
+0x000000013febcf98 0x000000007720ed94 USER32.dll           DrawFocusRect
+0x000000013febcfa0 0x00000000772076a0 USER32.dll           GetSysColor
+0x000000013febcfa8 0x00000000771fcf3c USER32.dll           IsWindowEnabled
+0x000000013febcfb0 0x0000000077209be0 USER32.dll           IntersectRect
+0x000000013febcfb8 0x0000000077204dc0 USER32.dll           GetClassNameW
+0x000000013febcfc0 0x00000000772087f0 USER32.dll           GetWindowDC
+0x000000013febcfc8 0x00000000771fcc3c USER32.dll           EnumThreadWindows
+0x000000013febcfd0 0x00000000772148d0 USER32.dll           GetComboBoxInfo
+0x000000013febcfd8 0x0000000077206a80 USER32.dll           GetClientRect
+0x000000013febcfe0 0x0000000077206b60 USER32.dll           DrawTextW
+0x000000013febcfe8 0x00000000771fdb60 USER32.dll           PtInRect
+0x000000013febcff0 0x0000000077206b40 USER32.dll           InvalidateRect
+0x000000013febcff8 0x0000000077230bd4 USER32.dll           ChildWindowFromPoint
+0x000000013febd000 0x000000007720784c USER32.dll           ReleaseDC
+0x000000013febd008 0x00000000771fc820 USER32.dll           GetCursorPos
+0x000000013febd010 0x0000000077206d10 USER32.dll           BeginPaint
+0x000000013febd018 0x0000000077206d00 USER32.dll           EndPaint
+0x000000013febd020 0x00000000771fd5a8 USER32.dll           GetWindowTextW
+0x000000013febd028 0x0000000077203a38 USER32.dll           CallWindowProcW
+0x000000013febd030 0x000000007720758c USER32.dll           SetWindowLongPtrW
+0x000000013febd038 0x0000000077206a00 USER32.dll           SendMessageW
+0x000000013febd040 0x0000000077206f14 USER32.dll           SetWindowTextW
+0x000000013febd048 0x00000000772095d0 USER32.dll           GetWindowLongPtrW
+0x000000013febd050 0x000000007720ccc0 USER32.dll           SetDlgItemTextW
+0x000000013febd058 0x000000007720e6a0 USER32.dll           GetDlgItemTextW
+0x000000013febd060 0x000000007726d160 USER32.dll           SetDlgItemTextA
+0x000000013febd068 0x00000000772182a4 USER32.dll           GetDlgItem
+0x000000013febd070 0x0000000077210804 USER32.dll           wsprintfW
+0x000000013febd078 0x0000000077206e20 USER32.dll           SetPropW
+0x000000013febd080 0x00000000771ff37c USER32.dll           SystemParametersInfoW
+0x000000013febd088 0x0000000077204e50 USER32.dll           GetAncestor
+0x000000013febd090 0x00000000772092a0 USER32.dll           TranslateAcceleratorW
+0x000000013febd098 0x0000000077211070 USER32.dll           DrawMenuBar
+0x000000013febd0a0 0x0000000077208ba8 USER32.dll           IsZoomed
+0x000000013febd0a8 0x00000000771fd350 USER32.dll           SetForegroundWindow
+0x000000013febd0b0 0x0000000077208b78 USER32.dll           IsIconic
+0x000000013febd0b8 0x0000000077208780 USER32.dll           GetPropW
+0x000000013febd0c0 0x0000000077218950 USER32.dll           GetWindowPlacement
+0x000000013febd0c8 0x000000007720dcac USER32.dll           DrawIcon
+0x000000013febd0d0 0x0000000077215af4 USER32.dll           ModifyMenuW
+0x000000013febd0d8 0x00000000771f8e00 USER32.dll           GetMenuItemID
+0x000000013febd0e0 0x00000000771f8d90 USER32.dll           GetSubMenu
+0x000000013febd0e8 0x0000000077215070 USER32.dll           ShowScrollBar
+0x000000013febd0f0 0x00000000771f89b0 USER32.dll           RemoveMenu
+0x000000013febd100 0x000007fefb78eed0 UxTheme.dll          BeginBufferedAnimation
+0x000000013febd108 0x000007fefb78f298 UxTheme.dll          GetThemeFont
+0x000000013febd110 0x000007fefb789d70 UxTheme.dll          OpenThemeData
+0x000000013febd118 0x000007fefb781ed0 UxTheme.dll          DrawThemeBackground
+0x000000013febd120 0x000007fefb78350c UxTheme.dll          GetThemeBackgroundContentRect
+0x000000013febd128 0x000007fefb78fd80 UxTheme.dll          EnableThemeDialogTexture
+0x000000013febd130 0x000007fefb79dc60 UxTheme.dll          DrawThemeTextEx
+0x000000013febd138 0x000007fefb79e408 UxTheme.dll          BufferedPaintStopAllAnimations
+0x000000013febd140 0x000007fefb7835e0 UxTheme.dll          GetThemePartSize
+0x000000013febd148 0x000007fefb78ee1c UxTheme.dll          BufferedPaintRenderAnimation
+0x000000013febd150 0x000007fefb784f98 UxTheme.dll          EndBufferedPaint
+0x000000013febd158 0x000007fefb78f48c UxTheme.dll          SetWindowTheme
+0x000000013febd160 0x000007fefb78fe00 UxTheme.dll          GetThemeTransitionDuration
+0x000000013febd168 0x000007fefb786590 UxTheme.dll          DrawThemeParentBackground
+0x000000013febd170 0x000007fefb788eac UxTheme.dll          CloseThemeData
+0x000000013febd180 0x000007fefc0815e0 VERSION.dll          VerQueryValueW
+0x000000013febd188 0x000007fefc081614 VERSION.dll          GetFileVersionInfoW
+0x000000013febd190 0x000007fefc0815fc VERSION.dll          GetFileVersionInfoSizeW
+0x000000013febd1a0 0x000007fefe21f3d0 WININET.dll          InternetCrackUrlW
+0x000000013febd1b0 0x000007fefcfd1010 WINTRUST.dll         WinVerifyTrust
+0x000000013febd1c0 0x000007fef53aedb8 dbghelp.dll          ImageNtHeader
+0x000000013febd1d0 0x000007feff3f6430 ole32.dll            CLSIDFromProgID
+0x000000013febd1d8 0x000007feff53f140 ole32.dll            RevokeDragDrop
+0x000000013febd1e0 0x000007feff53f240 ole32.dll            RegisterDragDrop
+0x000000013febd1e8 0x000007feff53fe40 ole32.dll            OleInitialize
+0x000000013febd1f0 0x000007feff53f590 ole32.dll            DoDragDrop
+0x000000013febd1f8 0x000007feff401d10 ole32.dll            CoGetApartmentType
+0x000000013febd200 0x000007feff3f90f0 ole32.dll            CoGetObjectContext
+0x000000013febd208 0x000007feff53fb50 ole32.dll            OleUninitialize
+0x000000013febd210 0x000007feff3e73b0 ole32.dll            ReleaseStgMedium
+0x000000013febd218 0x000007feff3fcfc8 ole32.dll            CoUninitialize
+0x000000013febd220 0x000007feff3f6f08 ole32.dll            CoInitialize
+0x000000013febd228 0x000007feff403780 ole32.dll            CoTaskMemFree
+0x000000013febd230 0x000007feff4023a0 ole32.dll            CoCreateInstance
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 impscan --pid=872 -b 0x1e20000 
+Volatility Foundation Volatility Framework 2.6.1
+IAT                Call               Module               Function
+------------------ ------------------ -------------------- --------
+                                                                                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 impscan --pid=872 -b 0x2d10000      
+Volatility Foundation Volatility Framework 2.6.1
+IAT                Call               Module               Function
+------------------ ------------------ -------------------- --------
+0x0000000002d19000 0x00000000770e08b0 kernel32.dll         CreateFileW
+0x0000000002d19008 0x00000000770f0440 kernel32.dll         GetCommandLineA
+0x0000000002d19010 0x00000000770e2f20 kernel32.dll         GetCurrentThreadId
+0x0000000002d19018 0x00000000770f1300 kernel32.dll         GetLastError
+0x0000000002d19020 0x00000000770f1320 kernel32.dll         SetLastError
+0x0000000002d19028 0x00000000773412a0 ntdll.dll            RtlEncodePointer
+0x0000000002d19030 0x000000007733bc90 ntdll.dll            RtlDecodePointer
+0x0000000002d19038 0x000000007732c120 ntdll.dll            RtlExitUserProcess
+0x0000000002d19040 0x00000000770daa80 kernel32.dll         GetModuleHandleExW
+0x0000000002d19048 0x00000000770f1bc0 kernel32.dll         GetProcAddress
+0x0000000002d19050 0x00000000770e4b90 kernel32.dll         MultiByteToWideChar
+0x0000000002d19058 0x00000000770f1580 kernel32.dll         GetProcessHeap
+0x0000000002d19060 0x00000000770ec640 kernel32.dll         GetStdHandle
+0x0000000002d19068 0x00000000770f1330 kernel32.dll         GetFileType
+0x0000000002d19070 0x00000000770e5520 kernel32.dll         InitializeCriticalSectionAndSpinCount
+0x0000000002d19078 0x000000007731d370 kernel32.dll         DeleteCriticalSection
+0x0000000002d19080 0x00000000770e70c0 kernel32.dll         GetStartupInfoW
+0x0000000002d19088 0x00000000770e54e0 kernel32.dll         GetModuleFileNameA
+0x0000000002d19090 0x00000000770f15a0 kernel32.dll         HeapFree
+0x0000000002d19098 0x00000000770e5540 kernel32.dll         QueryPerformanceCounter
+0x0000000002d190a0 0x00000000770e4a90 kernel32.dll         GetCurrentProcessId
+0x0000000002d190a8 0x00000000770e2f80 kernel32.dll         GetSystemTimeAsFileTime
+0x0000000002d190b0 0x00000000770e5d40 kernel32.dll         GetEnvironmentStringsW
+0x0000000002d190b8 0x00000000770e5d60 kernel32.dll         FreeEnvironmentStringsW
+0x0000000002d190c0 0x00000000770f1b20 kernel32.dll         WideCharToMultiByte
+0x0000000002d190c8 0x000000007711b880 kernel32.dll         RtlCaptureContext
+0x0000000002d190d0 0x000000007711b7a0 kernel32.dll         RtlLookupFunctionEntry
+0x0000000002d190d8 0x000000007711b740 kernel32.dll         RtlVirtualUnwind
+0x0000000002d190e0 0x000000007716b850 kernel32.dll         UnhandledExceptionFilter
+0x0000000002d190e8 0x00000000770e8bc0 kernel32.dll         SetUnhandledExceptionFilter
+0x0000000002d190f0 0x00000000770e4d30 kernel32.dll         GetCurrentProcess
+0x0000000002d190f8 0x000000007711be30 kernel32.dll         TerminateProcess
+0x0000000002d19100 0x00000000770e6140 kernel32.dll         TlsAlloc
+0x0000000002d19108 0x00000000770f1100 kernel32.dll         TlsGetValue
+0x0000000002d19110 0x00000000770e4d10 kernel32.dll         TlsSetValue
+0x0000000002d19118 0x00000000770e05d0 kernel32.dll         TlsFree
+0x0000000002d19120 0x00000000770f1c60 kernel32.dll         GetModuleHandleW
+0x0000000002d19128 0x00000000770f10a0 kernel32.dll         Sleep
+0x0000000002d19130 0x0000000077100f10 kernel32.dll         RtlUnwindEx
+0x0000000002d19138 0x000000007731d190 kernel32.dll         EnterCriticalSection
+0x0000000002d19140 0x000000007730c0b0 kernel32.dll         LeaveCriticalSection
+0x0000000002d19148 0x00000000770e80d0 kernel32.dll         IsValidCodePage
+0x0000000002d19150 0x00000000770e5fd0 kernel32.dll         GetACP
+0x0000000002d19158 0x00000000770ea470 kernel32.dll         GetOEMCP
+0x0000000002d19160 0x00000000770e5d20 kernel32.dll         GetCPInfo
+0x0000000002d19168 0x00000000770d7750 kernel32.dll         IsDebuggerPresent
+0x0000000002d19170 0x000000007711ce00 kernel32.dll         IsProcessorFeaturePresent
+0x0000000002d19178 0x00000000770f1ad0 kernel32.dll         WriteFile
+0x0000000002d19180 0x00000000770e6740 kernel32.dll         GetModuleFileNameW
+0x0000000002d19188 0x00000000770e5680 kernel32.dll         LoadLibraryExW
+0x0000000002d19190 0x0000000077317a30 kernel32.dll         HeapAlloc
+0x0000000002d19198 0x00000000773100b0 kernel32.dll         HeapReAlloc
+0x0000000002d191a0 0x00000000770e80b0 kernel32.dll         GetStringTypeW
+0x0000000002d191a8 0x00000000770daa60 kernel32.dll         OutputDebugStringW
+0x0000000002d191b0 0x00000000770e5fc0 kernel32.dll         LoadLibraryW
+0x0000000002d191b8 0x000000007732d4c0 kernel32.dll         HeapSize
+0x0000000002d191c0 0x00000000770ef3d0 kernel32.dll         LCMapStringW
+0x0000000002d191c8 0x00000000770d5f20 kernel32.dll         FlushFileBuffers
+0x0000000002d191d0 0x0000000077110950 kernel32.dll         GetConsoleCP
+0x0000000002d191d8 0x00000000770f1390 kernel32.dll         GetConsoleMode
+0x0000000002d191e0 0x000000007711be70 kernel32.dll         SetStdHandle
+0x0000000002d191e8 0x00000000770da200 kernel32.dll         SetFilePointerEx
+0x0000000002d191f0 0x00000000770e2d80 kernel32.dll         WriteConsoleW
+0x0000000002d191f8 0x00000000770f14b0 kernel32.dll         CloseHandle
+0x0000000002d19208 0x00000000772616b0 USER32.dll           MessageBoxA
+                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 vaddump --pid=872 -b 0x1e20000 -
+Volatility Foundation Volatility Framework 2.6.1
+Pid        Process              Start              End                Result
+---------- -------------------- ------------------ ------------------ ------
+       872 notepad++.exe        0x0000000001e20000 0x0000000001e30fff ./notepad++.exe.7f8d6060.0x0000000001e20000-0x00000000
+                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# strings notepad++.exe.7f8d6060.0x0000000001e20000-0x0000000001e30fff.dmp > injection_1e20000.txt                        
+                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# python vol.py  -f /home/kali/FinalDemo/ReflectiveDLLInjection.mem  --profile=Win7SP0x64 vaddump --pid=872 -b 0x2d10000 -
+Volatility Foundation Volatility Framework 2.6.1
+Pid        Process              Start              End                Result
+---------- -------------------- ------------------ ------------------ ------
+       872 notepad++.exe        0x0000000002d10000 0x0000000002d26fff ./notepad++.exe.7f8d6060.0x0000000002d10000-0x00000000
+                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
+└─# strings notepad++.exe.7f8d6060.0x0000000002d10000-0x0000000002d26fff.dmp > injection_2d10000.txt                        
+                                                                                                                            
+┌──(root㉿kali)-[/home/kali/volatility]
